@@ -1,4 +1,4 @@
-.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -14,15 +14,15 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.font-trebuchet, .font-base {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary {
+.bg-gradient-primary, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #8ccaee, #5ea6db);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -31,9 +31,9 @@
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#5ea6db), to(#8ccaee));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #5ea6db, #8ccaee);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -42,9 +42,9 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#e02877), to(#a71f63));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #e02877, #a71f63);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -52,96 +52,96 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 .corner-top-left {
-  -moz-border-radius-topleft: 6px;
-  -khtml-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
-  border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 0px;
+  -khtml-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 .corner-top-right {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  border-top-right-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .corner-bottom-left {
-  -moz-border-radius-bottomleft: 6px;
-  -khtml-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 0px;
+  -khtml-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .corner-bottom-right {
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-top {
-  -moz-border-radius-topleft: 6px;
-  -khtml-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 0px;
+  -khtml-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .corner-right {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-bottom {
-  -moz-border-radius-bottomleft: 6px;
-  -khtml-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomleft: 0px;
+  -khtml-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-left {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .clearfix, .body, .body .center, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
@@ -197,11 +197,11 @@ p {
 }
 
 b {
-  color: black !important;
+  color: #666666 !important;
   font-weight: bold;
 }
 
-.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -217,15 +217,15 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.font-trebuchet, .font-base {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary {
+.bg-gradient-primary, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #8ccaee, #5ea6db);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -234,9 +234,9 @@ b {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#5ea6db), to(#8ccaee));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #5ea6db, #8ccaee);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -245,9 +245,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#e02877), to(#a71f63));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #e02877, #a71f63);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -255,96 +255,96 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 .corner-top-left {
-  -moz-border-radius-topleft: 6px;
-  -khtml-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
-  border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 0px;
+  -khtml-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 .corner-top-right {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  border-top-right-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .corner-bottom-left {
-  -moz-border-radius-bottomleft: 6px;
-  -khtml-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 0px;
+  -khtml-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .corner-bottom-right {
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-top {
-  -moz-border-radius-topleft: 6px;
-  -khtml-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 0px;
+  -khtml-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .corner-right {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-bottom {
-  -moz-border-radius-bottomleft: 6px;
-  -khtml-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomleft: 0px;
+  -khtml-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-left {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .body {
@@ -377,38 +377,38 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   float: left;
   width: 280px;
   height: 200px;
-  background: #efefef;
-  border: 1px solid #dddddd;
+  border: 1px solid #499ad6;
   z-index: 20;
 }
 .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
-  font-family: "EmbedFont-1";
   position: absolute;
   top: 22.5px;
   left: 22.5px;
   margin: 0 22.5px 0 0;
-  color: #006bc7;
+  color: white;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: bold;
   word-spacing: 0.1em;
   letter-spacing: 0.05em;
 }
 .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3 {
+  font-family: "EmbedFont-1";
   position: absolute;
   top: 75px;
   left: 22.5px;
   margin: 0 76px 12px 0;
-  color: #666666;
+  color: white;
   font-size: 12px;
   font-weight: 200;
   line-height: 1.3em;
 }
 .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+  font-family: "EmbedFont-1";
   position: absolute;
   bottom: 15px;
   left: 22.5px;
   display: inline;
-  color: #d8a41c;
+  color: #a71f63;
   font-size: 11px;
   font-weight: 200;
   text-decoration: none;

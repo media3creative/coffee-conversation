@@ -60,9 +60,9 @@ table {
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #8ccaee, #5ea6db);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -71,9 +71,9 @@ table {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#5ea6db), to(#8ccaee));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #5ea6db, #8ccaee);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -82,9 +82,9 @@ table {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#e02877), to(#a71f63));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #e02877, #a71f63);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -92,11 +92,11 @@ table {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 a {
@@ -260,9 +260,9 @@ select, input, textarea {
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #8ccaee, #5ea6db);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -271,9 +271,9 @@ select, input, textarea {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#5ea6db), to(#8ccaee));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #5ea6db, #8ccaee);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -282,9 +282,9 @@ select, input, textarea {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#e02877), to(#a71f63));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #e02877, #a71f63);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -292,96 +292,96 @@ select, input, textarea {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 .corner-top-left {
-  -moz-border-radius-topleft: 6px;
-  -khtml-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
-  border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 0px;
+  -khtml-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 .corner-top-right {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  border-top-right-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .corner-bottom-left {
-  -moz-border-radius-bottomleft: 6px;
-  -khtml-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 0px;
+  -khtml-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .corner-bottom-right {
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-top {
-  -moz-border-radius-topleft: 6px;
-  -khtml-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 0px;
+  -khtml-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .corner-right {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-bottom {
-  -moz-border-radius-bottomleft: 6px;
-  -khtml-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomleft: 0px;
+  -khtml-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-left {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .corner-all {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .clearfix {
@@ -437,7 +437,7 @@ p {
 }
 
 b {
-  color: black !important;
+  color: #666666 !important;
   font-weight: bold;
 }
 
@@ -463,9 +463,9 @@ b {
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #8ccaee, #5ea6db);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -474,9 +474,9 @@ b {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#5ea6db), to(#8ccaee));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #5ea6db, #8ccaee);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -485,9 +485,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#e02877), to(#a71f63));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #e02877, #a71f63);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -495,96 +495,96 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 .corner-top-left {
-  -moz-border-radius-topleft: 6px;
-  -khtml-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
-  border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 0px;
+  -khtml-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 .corner-top-right {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  border-top-right-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .corner-bottom-left {
-  -moz-border-radius-bottomleft: 6px;
-  -khtml-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 0px;
+  -khtml-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .corner-bottom-right {
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-top {
-  -moz-border-radius-topleft: 6px;
-  -khtml-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 0px;
+  -khtml-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .corner-right {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-bottom {
-  -moz-border-radius-bottomleft: 6px;
-  -khtml-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomleft: 0px;
+  -khtml-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .corner-left {
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -khtml-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -khtml-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -khtml-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .corner-all {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .grid-pie-clearfix, .grid-container, .container, .nested-grid-container, .grid-block, .grid-full, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .container .content, p.last, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
@@ -1290,9 +1290,9 @@ p:last-child {
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #8ccaee, #5ea6db);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -1301,9 +1301,9 @@ p:last-child {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#5ea6db), to(#8ccaee));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #5ea6db, #8ccaee);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -1312,9 +1312,9 @@ p:last-child {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#e02877), to(#a71f63));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #e02877, #a71f63);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -1322,11 +1322,11 @@ p:last-child {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #b4d5ff;
+  background: #c5daf1;
 }
 
 .m3c-bar {
@@ -1337,14 +1337,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 20px;
   overflow: hidden;
   *zoom: 1;
-  color: #efefef;
-  background: #d8a41c;
+  color: white;
+  background: #a71f63;
   font-size: 9px;
   font-weight: 200;
   text-transform: uppercase;
   line-height: 1.4em;
   letter-spacing: 1px;
-  border-top: 1px solid #c19319;
+  border-top: 1px solid #911b56;
   z-index: 100;
 }
 .m3c-bar .copyright {
@@ -1360,7 +1360,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 3px 0 0 0;
 }
 .m3c-bar a {
-  color: #003461;
+  color: #5ea6db;
   text-decoration: none;
 }
 .m3c-bar a:hover {
@@ -1433,7 +1433,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #efefef;
+  background: url(/images/stripe.png) repeat;
 }
 
 .content {

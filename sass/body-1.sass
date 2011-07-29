@@ -45,28 +45,29 @@
 	@extend .corner-all
 	@extend .font-helvetica
 	@extend .clearfix
+	@extend .bg-gradient-primary
 	position: relative
 	+float-left
 	width: (($inside-width - ($h-gap * 2)) / 3)
 	height: $option-height
-	background: $option-bg
+	//background: $option-bg
 	border: 1px solid $option-border
 	z-index: 20
 	h1
 		@extend .box
-		font-family: "EmbedFont-1"
+		@extend .font-helvetica
 		position: absolute
 		top: ($v-gap * 0.75)
 		left: ($h-gap * 0.75)
 		margin: 0 ($h-gap * 0.75) 0 0
 		color: $option-title
 		font-size: 24px
-		font-weight: 100
+		font-weight: bold
 		word-spacing: .1em
 		letter-spacing: .05em
 	h3
 		@extend .box
-		@extend .font-base
+		font-family: "EmbedFont-1"
 		position: absolute
 		top: 75px
 		left: ($h-gap * 0.75)
@@ -78,7 +79,7 @@
 	p.link
 		@extend .box
 		@extend .corner-all
-		@extend .font-base
+		font-family: "EmbedFont-1"
 		position: absolute
 		bottom: ($v-gap * 0.5)
 		left: ($h-gap * 0.75)

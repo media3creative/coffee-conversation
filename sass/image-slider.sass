@@ -19,7 +19,7 @@
 		padding: $v-gap 0 ($v-gap/2)
 		h1
 			@extend .box
-			font-family: "EmbedFont-1"
+			@extend .font-helvetica
 			width: $inside-width
 			margin: 15px 0 0 0
 			padding: 0 ($h-gap) 0.2em 300px
@@ -27,7 +27,7 @@
 			//background: $primary
 			//opacity: 0.85
 			font-size: 30px
-			font-weight: 100
+			font-weight: bold
 			text-align: right
 			line-height: 1em
 			word-spacing: .1em
@@ -36,7 +36,7 @@
 			&:hover
 				//opacity: 0.75
 		h3
-			@extend .font-base
+			font-family: "EmbedFont-1"
 			//@extend .corner-right
 			@extend .box
 			position: relative
@@ -68,7 +68,7 @@
 			&:hover
 				@extend .bg-gradient-reverse
 			a
-				font-family: "EmbedFont-1"
+				@extend .font-helvetica
 				display: block
 				padding: 9px 2em 8px 2em
 				color: inherit
@@ -181,7 +181,7 @@ a.nivo-nextNav
 #slider-wrapper 
 	@extend .box
 	@extend .corner-all
-	font-family: "EmbedFont-1"
+	@extend .font-helvetica
 	position: relative
 	width: $inside-width
 	height: $slider-height

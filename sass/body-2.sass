@@ -72,7 +72,7 @@
 	h1
 		@extend .box
 		@extend .corner-top
-		font-family: "EmbedFont-1"
+		@extend .font-helvetica
 		position: relative
 		color: $option-title
 		background: $option-title-bg
@@ -80,15 +80,14 @@
 		margin: 0 auto
 		padding: 1em 0
 		font-size: 18px
-		font-weight: 100
-		text-transform: uppercase
+		font-weight: bold
 		text-align: left
 	h3
 		@extend .box
 		@extend .corner-top
-		@extend .font-base
+		font-family: "EmbedFont-1"
 		position: relative
-		color: $text-dark
+		color: $option-title
 		background: $option-title-bg
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto ($v-gap / 2)
@@ -100,7 +99,7 @@
 
 .link
 	@extend .clearfix
-	@extend .font-trebuchet
+	font-family: "EmbedFont-1"
 	@extend .box
 	position: relative
 	width: ($option-width - ($h-gap *2))
@@ -136,18 +135,18 @@
 			font-size: 12px
 			color: $option-link
 			&:hover
-				color: $secondary
+				color: $option-link-hover
 				text-decoration: none
 					
 // Text-style sidebar box
 .text
 	p
-		@extend .font-base
+		font-family: "EmbedFont-1"
 		@extend .box
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto ($v-gap / 2)
 		padding: 0
-		color: $section-text
+		color: $option-text
 		font-size: 12px
 		font-weight: 200
 		text-align: justify
@@ -158,9 +157,14 @@
 // Button-style sidebar box
 .button
 	p.link
-		@extend .bg-gradient-primary
+		@extend .bg-gradient-secondary
 		@extend .box
-		@extend .corner-all
+		//@extend .corner-all
+		+border-radius(7px)
+		border-top-right-radius: 7px
+		border-top-left-radius: 7px
+		border-bottom-right-radius: 7px
+		border-bottom-left-radius: 7px
 		position: relative
 		width: ($sidebar-width - (($h-gap - $corner-radius) * 2))
 		margin: 0 auto ($v-gap / 2)
@@ -169,7 +173,7 @@
 		text-align: center
 		border: 1px solid $primary
 		&:hover
-			@extend .bg-gradient-reverse
+			@extend .bg-gradient-secondary
 		a
 			display: block
 			margin: 0
@@ -218,7 +222,7 @@
 				margin: 0 ($h-gap / 2) ($v-gap / 2) 0
 				z-index: 100
 			h1
-				font-family: "EmbedFont-1"
+				@extend .font-helvetica
 				@extend .box
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
 				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
@@ -253,12 +257,13 @@
 	@extend .box
 	@extend .corner-all
 	@extend .clearfix
+	@extend .bg-gradient-primary
 	position: relative
 	+float-left
 	clear: both
 	width: $sidebar-width
 	margin: 0 0 $v-gap 0
-	background: $option-bg
+	//background: $option-bg
 	border: 1px solid $option-border
 	z-index: 20
 
