@@ -354,6 +354,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .body .center {
   padding: 15px 0;
+  border-left: 1px solid #911b56;
+  border-right: 1px solid #911b56;
 }
 .body .center .content {
 @extent .box;

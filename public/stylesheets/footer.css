@@ -351,6 +351,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-family: "EmbedFont-1";
   margin: 0 auto;
   padding: 15px 0 30px;
+  border-left: 1px solid #911b56;
+  border-right: 1px solid #911b56;
+  border-bottom: 1px solid #911b56;
 }
 #footer .center .content {
 @extent .box;

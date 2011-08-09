@@ -354,6 +354,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .image-slider .center {
   padding: 30px 0 15px;
+  border-left: 1px solid #911b56;
+  border-right: 1px solid #911b56;
 }
 .image-slider .center .captionContainer {
   position: absolute;
