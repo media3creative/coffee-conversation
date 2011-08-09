@@ -1,4 +1,4 @@
-.font-helvetica, .image-slider .center h1, .image-slider .center p.link a, #slider-wrapper {
+.font-helvetica, #slider-wrapper {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -14,11 +14,11 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet, .font-base, .image-slider .center .captionContainer h3 {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .image-slider .center p.link {
+.bg-gradient-primary, .image-slider .center .captionContainer p.link {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -29,7 +29,7 @@
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
 }
 
-.bg-gradient-reverse, .image-slider .center p.link:hover {
+.bg-gradient-reverse, .image-slider .center .captionContainer p.link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#5ea6db), to(#8ccaee));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -131,7 +131,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .image-slider .center p.link, .nivoSlider, #slider-wrapper, #slider {
+.corner-all, .image-slider .center .captionContainer p.link, .nivoSlider, #slider-wrapper, #slider {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -170,7 +170,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: white;
 }
 
-.box, .center-container, .image-slider .center, .image-slider, .image-slider .center h1, .image-slider .center h3, .image-slider .center p.link, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
+.box, .center-container, .image-slider .center, .image-slider, .image-slider .center .captionContainer, .image-slider .center .captionContainer h1, .image-slider .center .captionContainer h3, .image-slider .center .captionContainer p.link, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -201,7 +201,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, .image-slider .center h1, .image-slider .center p.link a, #slider-wrapper {
+.font-helvetica, #slider-wrapper {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -217,11 +217,11 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet, .font-base, .image-slider .center .captionContainer h3 {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .image-slider .center p.link {
+.bg-gradient-primary, .image-slider .center .captionContainer p.link {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -232,7 +232,7 @@ b {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
 }
 
-.bg-gradient-reverse, .image-slider .center p.link:hover {
+.bg-gradient-reverse, .image-slider .center .captionContainer p.link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#5ea6db), to(#8ccaee));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -334,7 +334,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .image-slider .center p.link, .nivoSlider, #slider-wrapper, #slider {
+.corner-all, .image-slider .center .captionContainer p.link, .nivoSlider, #slider-wrapper, #slider {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -355,39 +355,46 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .image-slider .center {
   padding: 30px 0 15px;
 }
-.image-slider .center h1 {
+.image-slider .center .captionContainer {
+  position: absolute;
   width: 900px;
-  margin: 15px 0 0 0;
-  padding: 0 30px 0.2em 300px;
+  top: 200px;
+  left: 0;
+  margin: 0;
+  padding: 5px;
+  background: #a71f63;
+}
+.image-slider .center .captionContainer h1 {
+  margin: 5px 15px;
+  padding: 0;
   color: #8ccaee;
   font-size: 30px;
-  font-weight: bold;
-  text-align: right;
+  font-weight: bolder;
+  text-align: left;
   line-height: 1em;
   word-spacing: 0.1em;
-  letter-spacing: 0.05em;
+  letter-spacing: -0.05em;
 }
-.image-slider .center h3 {
-  font-family: "EmbedFont-1";
+.image-slider .center .captionContainer h3 {
   position: relative;
   top: 0px;
-  width: 900px;
-  margin: 0 0 6px 0;
-  padding: 0.4em 30px 0.4em 450px;
-  color: #666666;
+  margin: 0 15px 10px;
+  padding: 0;
+  color: #efefef;
   font-size: 14px;
   font-weight: 200;
-  text-align: right;
+  text-align: left;
   line-height: 1.1em;
 }
-.image-slider .center p.link {
+.image-slider .center .captionContainer p.link {
   position: absolute;
   bottom: 15px;
-  left: 30px;
+  right: 30px;
   color: white;
   border: 1px solid #5ea6db;
 }
-.image-slider .center p.link a {
+.image-slider .center .captionContainer p.link a {
+  font-family: "EmbedFont-1";
   display: block;
   padding: 9px 2em 8px 2em;
   color: inherit;
@@ -469,7 +476,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .nivo-directionNav a {
   position: absolute;
-  top: 45%;
+  top: 79%;
   z-index: 9;
   cursor: pointer;
   display: block;
@@ -481,7 +488,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 a.nivo-prevNav {
-  left: 15px;
+  right: 55px;
 }
 
 a.nivo-nextNav {

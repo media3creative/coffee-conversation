@@ -352,7 +352,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 80px;
   margin: 0;
   padding: 0;
-  border-bottom: 2px solid #666666;
+  border-bottom: 2px solid #499ad6;
 }
 
 .center #logo1 {

@@ -389,7 +389,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-size: 24px;
   font-weight: bold;
   word-spacing: 0.1em;
-  letter-spacing: 0.05em;
+  letter-spacing: -0.05em;
 }
 .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3 {
   font-family: "EmbedFont-1";

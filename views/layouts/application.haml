@@ -2,10 +2,10 @@
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["About", "/page2"]
-- @link3 = ["Services", "/page3"]
+- @link2 = ["About", "/about"]
+- @link3 = ["Services", "/services"]
 - @link4 = ["Gallery", "/gallery"]
-- @link5 = ["Contact", "/page5"]
+- @link5 = ["Contact", "/contact"]
 
 // FOOTER LINKS
 - @linkA1 = ["Anna Jennings", "ssss"]
@@ -193,9 +193,9 @@
           %li
             %a#three.topnav{:href => @link3[1]}
               =@link3[0]
-          %li
-            %a#four.topnav{:href => @link4[1]}
-              =@link4[0]
+          / %li
+          /   %a#four.topnav{:href => @link4[1]}
+          /     =@link4[0]
           %li
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]
@@ -207,6 +207,11 @@
       .center
         .content
           &nbsp;
+          .row
+            %p.logo-sm
+              %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
+              %br
+              Anna Knows | Dedicated to connecting the consumer and business owner
           .row
             %p
               =@linkA1[0]
