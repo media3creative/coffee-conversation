@@ -268,6 +268,40 @@
 					&:hover
 						color: $primary
 
+table#services
+	@extend .box
+	border-collapse: none !important
+	border: 1px solid $primary
+	margin: $v-gap 0
+	tr, td
+		@extend .font-base
+		@extend .box
+		padding: .5em
+		color: $section-text
+		font-size: 12px
+		font-weight: 200
+		text-align: center
+		line-height: 1.7em
+	tr.header td
+		font-size: 115%
+		font-weight: bold
+		color: #fff
+		background: $primary-light
+		border: 1px solid transparent
+		border-bottom: 1px solid $line-color
+	tr:hover
+		background: #efefef
+	td.blank
+		background: transparent !important
+	td.type
+		min-width: 150px
+		text-align: left
+	td
+		border: 1px solid $line-color
+	td.n
+		background: url(/images/x.png) center center no-repeat
+	td.y
+		background: url(/images/v.png) center center no-repeat
 .container-setup
 	@extend .box
 	@extend .corner-all

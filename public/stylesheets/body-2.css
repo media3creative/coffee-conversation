@@ -14,7 +14,7 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
+.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, table#services tr, table#services td {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -170,7 +170,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: white;
 }
 
-.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3, .link, .link p, .text p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, .container-setup, .subnav, .text, .button, .form {
+.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3, .link, .link p, .text p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, table#services, table#services tr, table#services td, .container-setup, .subnav, .text, .button, .form {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -217,7 +217,7 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
+.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, table#services tr, table#services td {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -594,6 +594,47 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .main .content .section p a:hover, .main .content .main p a:hover {
   color: #5ea6db;
+}
+
+table#services {
+  border-collapse: none !important;
+  border: 1px solid #5ea6db;
+  margin: 30px 0;
+}
+table#services tr, table#services td {
+  padding: 0.5em;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.7em;
+}
+table#services tr.header td {
+  font-size: 115%;
+  font-weight: bold;
+  color: white;
+  background: #8ccaee;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #dddddd;
+}
+table#services tr:hover {
+  background: #efefef;
+}
+table#services td.blank {
+  background: transparent !important;
+}
+table#services td.type {
+  min-width: 150px;
+  text-align: left;
+}
+table#services td {
+  border: 1px solid #dddddd;
+}
+table#services td.n {
+  background: url(/images/x.png) center center no-repeat;
+}
+table#services td.y {
+  background: url(/images/v.png) center center no-repeat;
 }
 
 .container-setup, .subnav, .text, .button, .form {
