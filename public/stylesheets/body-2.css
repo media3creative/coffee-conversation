@@ -1,4 +1,4 @@
-.font-helvetica, .subnav h1, .text h1, .button h1, .form h1, .main {
+.font-helvetica, .subnav h1, .text h1, .form h1, .button h1, .main {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .button, .form {
+.bg-gradient-primary, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -87,7 +87,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 0px;
 }
 
-.corner-top, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3 {
+.corner-top, .subnav h1, .text h1, .form h1, .button h1, .subnav h3, .text h3, .form h3, .button h3 {
   -moz-border-radius-topleft: 0px;
   -khtml-border-radius-topleft: 0px;
   -webkit-border-top-left-radius: 0px;
@@ -131,7 +131,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .banner .center .content img.banner, .link h5, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .button, .form {
+.corner-all, .banner .center .content img.banner, .link h5, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -144,16 +144,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.clearfix, .body, .body .center, .sidebar, .link, .main .content .section, .main .content .main, .container-setup, .subnav, .text, .button, .form, .columns, .spacer {
+.clearfix, .body, .body .center, .sidebar, .link, .main .content .section, .main .content .main, .container-setup, .subnav, .text, .form, .button, .columns, .spacer {
   zoom: 1;
 }
-.clearfix:before, .body:before, .body .center:before, .sidebar:before, .link:before, .main .content .section:before, .main .content .main:before, .container-setup:before, .subnav:before, .text:before, .button:before, .form:before, .columns:before, .spacer:before {
+.clearfix:before, .body:before, .body .center:before, .sidebar:before, .link:before, .main .content .section:before, .main .content .main:before, .container-setup:before, .subnav:before, .text:before, .form:before, .button:before, .columns:before, .spacer:before {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.clearfix:after, .body:after, .body .center:after, .sidebar:after, .link:after, .main .content .section:after, .main .content .main:after, .container-setup:after, .subnav:after, .text:after, .button:after, .form:after, .columns:after, .spacer:after {
+.clearfix:after, .body:after, .body .center:after, .sidebar:after, .link:after, .main .content .section:after, .main .content .main:after, .container-setup:after, .subnav:after, .text:after, .form:after, .button:after, .columns:after, .spacer:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -170,7 +170,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: white;
 }
 
-.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3, .link, .link p, .text p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, table#services, table#services tr, table#services td, .container-setup, .subnav, .text, .button, .form {
+.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .form h1, .button h1, .subnav h3, .text h3, .form h3, .button h3, .link, .link p, .text p, .form p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, table#services, table#services tr, table#services td, .container-setup, .subnav, .text, .form, .button {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -201,7 +201,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, .subnav h1, .text h1, .button h1, .form h1, .main {
+.font-helvetica, .subnav h1, .text h1, .form h1, .button h1, .main {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -221,7 +221,7 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .button, .form {
+.bg-gradient-primary, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -290,7 +290,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 0px;
 }
 
-.corner-top, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3 {
+.corner-top, .subnav h1, .text h1, .form h1, .button h1, .subnav h3, .text h3, .form h3, .button h3 {
   -moz-border-radius-topleft: 0px;
   -khtml-border-radius-topleft: 0px;
   -webkit-border-top-left-radius: 0px;
@@ -334,7 +334,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .banner .center .content img.banner, .link h5, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .button, .form {
+.corner-all, .banner .center .content img.banner, .link h5, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -406,7 +406,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 0 30px 30px;
 }
 
-.subnav h1, .text h1, .button h1, .form h1 {
+.subnav h1, .text h1, .form h1, .button h1, .form h1 {
   position: relative;
   color: white;
   background: transparent;
@@ -417,15 +417,15 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-weight: bold;
   text-align: left;
 }
-.subnav h3, .text h3, .button h3, .form h3 {
+.subnav h3, .text h3, .form h3, .button h3, .form h3 {
   font-family: "EmbedFont-1";
   position: relative;
   color: white;
   background: transparent;
   width: 220px;
-  margin: 0 auto 15px;
+  margin: 0 auto;
   padding: 0;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   text-transform: none;
   text-align: left;
@@ -465,7 +465,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   width: 200px;
   margin: 0;
   padding: 0 0 0 1em;
-  font-size: 12px;
+  font-size: 13px;
 }
 .link p a {
   font-size: 12px;
@@ -476,18 +476,18 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   text-decoration: none;
 }
 
-.text p {
+.text p, .form p {
   font-family: "EmbedFont-1";
   width: 220px;
   margin: 0 auto 15px;
   padding: 0;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 200;
   text-align: justify;
   line-height: 1.7em;
 }
-.text p:last-child {
+.text p:last-child, .form p:last-child {
   margin-bottom: 15px;
 }
 
@@ -637,7 +637,7 @@ table#services td.y {
   background: url(/images/v.png) center center no-repeat;
 }
 
-.container-setup, .subnav, .text, .button, .form {
+.container-setup, .subnav, .text, .form, .button {
   position: relative;
   display: inline;
   float: left;
