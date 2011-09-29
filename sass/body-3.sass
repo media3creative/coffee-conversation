@@ -196,6 +196,8 @@ table#calendar
 		font-weight: 200
 		text-align: center
 		line-height: 1.7em
+	td:hover
+		background: #efefef !important
 	tr.header td
 		padding: 6px
 		font-size: 115%
@@ -204,8 +206,16 @@ table#calendar
 		background: $primary-light !important
 		border: 1px solid transparent
 		border-bottom: 1px solid $line-color
-	tr:hover
-		background: #efefef
+	tr.month td
+		padding: 6px
+		font-size: 115%
+		font-weight: bold
+		color: #fff
+		background: $secondary !important
+		border: 1px solid transparent
+		border-bottom: 1px solid $secondary
+	td.we
+		background: #f4f4f4
 	td.blank
 		background: transparent !important
 	td
@@ -216,9 +226,8 @@ table#calendar
 			padding: 6px
 			min-height: 50px
 			text-align: center
+			line-height: 1.1em
 		
-	td.we
-		background: #eee
 		
 #d1
 	background: url(/images/cal/1.png) 0 0 no-repeat

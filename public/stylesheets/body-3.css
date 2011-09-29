@@ -1580,6 +1580,9 @@ table#calendar tr, table#calendar td {
   text-align: center;
   line-height: 1.7em;
 }
+table#calendar td:hover {
+  background: #efefef !important;
+}
 table#calendar tr.header td {
   padding: 6px;
   font-size: 115%;
@@ -1589,8 +1592,17 @@ table#calendar tr.header td {
   border: 1px solid transparent;
   border-bottom: 1px solid #dddddd;
 }
-table#calendar tr:hover {
-  background: #efefef;
+table#calendar tr.month td {
+  padding: 6px;
+  font-size: 115%;
+  font-weight: bold;
+  color: white;
+  background: #a71f63 !important;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #a71f63;
+}
+table#calendar td.we {
+  background: #f4f4f4;
 }
 table#calendar td.blank {
   background: transparent !important;
@@ -1604,9 +1616,7 @@ table#calendar td p {
   padding: 6px;
   min-height: 50px;
   text-align: center;
-}
-table#calendar td.we {
-  background: #eeeeee;
+  line-height: 1.1em;
 }
 
 #d1 {
