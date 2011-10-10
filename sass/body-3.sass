@@ -35,7 +35,93 @@
 				margin: 0
 				padding: 0
 				
+.listings
+	@extend .box
+	@extend .clearfix
+	position: relative
+	width: 100%
+	margin: 0 auto
+	.center
+		@extend .center-container
+		@extend .clearfix
+		padding: ($v-gap/2) 0
+		border-left: 1px solid $secondary-dark
+		border-right: 1px solid $secondary-dark
+		.content
+			@extent .box
+			width: $inside-width
+			margin: 0 auto
+			padding: 0
+			.left
+				a.container
+					@extend .listing-setup
+					margin: 15px ($h-gap - 1) 15px 0
+					//background: $accent-color url("/images/home_left.jpg") no-repeat
+			.middle
+				a.container
+					@extend .listing-setup
+					margin: 15px ($h-gap - 1) 15px 0
+					//background: $accent-color url("/images/home_center.jpg") no-repeat
+			.right
+				a.container
+					@extend .listing-setup
+					margin: 15px 0
+					//background: $accent-color url("/images/home_right.jpg") no-repeat
 
+
+.listing-setup
+	@extend .box
+	@extend .corner-all
+	@extend .font-helvetica
+	@extend .clearfix
+	@extend .bg-gradient-primary
+	position: relative
+	+float-left
+	width: (($inside-width - ($h-gap * 2)) / 3)
+	height: 275px
+	//background: $option-bg
+	border: 1px solid $option-border
+	z-index: 20
+	h1
+		@extend .box
+		@extend .font-helvetica
+		position: relative
+		top: ($v-gap * 0.75)
+		left: ($h-gap * 0.75)
+		margin: 0 ($h-gap * 0.75) 0 0
+		color: $option-title
+		font-size: 24px
+		font-weight: bold
+		word-spacing: .1em
+		letter-spacing: -0.05em
+	h3
+		@extend .box
+		font-family: "EmbedFont-1"
+		position: relative
+		top: 40px
+		left: ($h-gap * 0.75)
+		margin: 0 ($h-gap * 0.75) 12px 0
+		color: $option-text
+		font-size: 14px
+		font-weight: 200
+		line-height: 1.3em
+	p.link
+		@extend .box
+		@extend .corner-all
+		font-family: "EmbedFont-1"
+		position: absolute
+		bottom: ($v-gap * 0.5)
+		left: ($h-gap * 0.75)
+		display: inline
+		color: $option-link
+		font-size: 11px
+		font-weight: 200
+		text-decoration: none
+	&:hover
+		text-decoration: none
+		@extend .opaque
+		
+		
 
 .body
 	@extend .box
@@ -174,120 +260,3 @@
 	h1, p
 		width: $inside-width
 		margin-left: 0 !important
-		
-// Adds additional formatting for forms that are not imported from _classes.sass		
-.contact-form
-	iframe
-		max-width: 600px
-		
-		
-table#calendar
-	@extend .box
-	width: 100%
-	border-collapse: none !important
-	border: 1px solid $primary
-	margin: $v-gap 0
-	tr, td
-		@extend .font-base
-		@extend .box
-		padding: .5em
-		color: $section-text
-		font-size: 12px
-		font-weight: 200
-		text-align: center
-		line-height: 1.7em
-	td:hover
-		background: #efefef !important
-	tr.header td
-		padding: 6px
-		font-size: 115%
-		font-weight: bold
-		color: #fff
-		background: $primary-light !important
-		border: 1px solid transparent
-		border-bottom: 1px solid $line-color
-	tr.month td
-		padding: 6px
-		font-size: 115%
-		font-weight: bold
-		color: #fff
-		background: $secondary !important
-		border: 1px solid transparent
-		border-bottom: 1px solid $secondary
-	td.we
-		background: #f4f4f4
-	td.blank
-		background: transparent !important
-	td
-		padding: 0px
-		width: 14.28%
-		border: 1px solid $line-color
-		p
-			padding: 6px
-			min-height: 50px
-			text-align: center
-			line-height: 1.1em
-		
-		
-#d1
-	background: url(/images/cal/1.png) 0 0 no-repeat
-#d2
-	background: url(/images/cal/2.png) 0 0 no-repeat
-#d3
-	background: url(/images/cal/3.png) 0 0 no-repeat
-#d4
-	background: url(/images/cal/4.png) 0 0 no-repeat
-#d5
-	background: url(/images/cal/5.png) 0 0 no-repeat
-#d6
-	background: url(/images/cal/6.png) 0 0 no-repeat
-#d7
-	background: url(/images/cal/7.png) 0 0 no-repeat
-#d8
-	background: url(/images/cal/8.png) 0 0 no-repeat
-#d9
-	background: url(/images/cal/9.png) 0 0 no-repeat
-#d10
-	background: url(/images/cal/10.png) 0 0 no-repeat
-#d11
-	background: url(/images/cal/11.png) 0 0 no-repeat
-#d12
-	background: url(/images/cal/12.png) 0 0 no-repeat
-#d13
-	background: url(/images/cal/13.png) 0 0 no-repeat
-#d14
-	background: url(/images/cal/14.png) 0 0 no-repeat
-#d15
-	background: url(/images/cal/15.png) 0 0 no-repeat
-#d16
-	background: url(/images/cal/16.png) 0 0 no-repeat
-#d17
-	background: url(/images/cal/17.png) 0 0 no-repeat
-#d18
-	background: url(/images/cal/18.png) 0 0 no-repeat
-#d19
-	background: url(/images/cal/19.png) 0 0 no-repeat
-#d20
-	background: url(/images/cal/20.png) 0 0 no-repeat
-#d21
-	background: url(/images/cal/21.png) 0 0 no-repeat
-#d22
-	background: url(/images/cal/22.png) 0 0 no-repeat
-#d23
-	background: url(/images/cal/23.png) 0 0 no-repeat
-#d24
-	background: url(/images/cal/24.png) 0 0 no-repeat
-#d25
-	background: url(/images/cal/25.png) 0 0 no-repeat
-#d26
-	background: url(/images/cal/26.png) 0 0 no-repeat
-#d27
-	background: url(/images/cal/27.png) 0 0 no-repeat
-#d28
-	background: url(/images/cal/28.png) 0 0 no-repeat
-#d29
-	background: url(/images/cal/29.png) 0 0 no-repeat
-#d30
-	background: url(/images/cal/30.png) 0 0 no-repeat
-#d31
-	background: url(/images/cal/31.png) 0 0 no-repeat

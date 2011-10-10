@@ -1,4 +1,4 @@
-.font-helvetica, .main {
+.font-helvetica, .listing-setup, .listings .center .content .left a.container, .listings .center .content .middle a.container, .listings .center .content .right a.container, .listing-setup h1, .listings .center .content .left a.container h1, .listings .center .content .middle a.container h1, .listings .center .content .right a.container h1, .main {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -14,11 +14,11 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, table#calendar tr, table#calendar td {
+.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .main .content .section img, .main .content .main img {
+.bg-gradient-primary, .listing-setup, .listings .center .content .left a.container, .listings .center .content .middle a.container, .listings .center .content .right a.container, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -131,7 +131,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .banner .center .content img.banner, .main .content .section img, .main .content .main img, .container-setup {
+.corner-all, .banner .center .content img.banner, .listing-setup, .listings .center .content .left a.container, .listings .center .content .middle a.container, .listings .center .content .right a.container, .listing-setup p.link, .listings .center .content .left a.container p.link, .listings .center .content .middle a.container p.link, .listings .center .content .right a.container p.link, .main .content .section img, .main .content .main img, .container-setup {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -144,16 +144,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.clearfix, .body, .body .center, .main .content .section, .main .content .main, .container-setup, .columns, .spacer {
+.clearfix, .listings, .listings .center, .listing-setup, .listings .center .content .left a.container, .listings .center .content .middle a.container, .listings .center .content .right a.container, .body, .body .center, .main .content .section, .main .content .main, .container-setup, .columns, .spacer {
   zoom: 1;
 }
-.clearfix:before, .body:before, .body .center:before, .main .content .section:before, .main .content .main:before, .container-setup:before, .columns:before, .spacer:before {
+.clearfix:before, .listings:before, .listings .center:before, .listing-setup:before, .listings .center .content .left a.container:before, .listings .center .content .middle a.container:before, .listings .center .content .right a.container:before, .body:before, .body .center:before, .main .content .section:before, .main .content .main:before, .container-setup:before, .columns:before, .spacer:before {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.clearfix:after, .body:after, .body .center:after, .main .content .section:after, .main .content .main:after, .container-setup:after, .columns:after, .spacer:after {
+.clearfix:after, .listings:after, .listings .center:after, .listing-setup:after, .listings .center .content .left a.container:after, .listings .center .content .middle a.container:after, .listings .center .content .right a.container:after, .body:after, .body .center:after, .main .content .section:after, .main .content .main:after, .container-setup:after, .columns:after, .spacer:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -161,7 +161,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   clear: both;
 }
 
-.center-container, .banner .center, .body .center {
+.center-container, .banner .center, .listings .center, .body .center {
   position: relative;
   width: 960px;
   height: 100%;
@@ -170,14 +170,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: white;
 }
 
-.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, .container-setup, table#calendar, table#calendar tr, table#calendar td {
+.box, .center-container, .banner .center, .listings .center, .body .center, .banner, .banner .center .content img.banner, .listings, .listing-setup, .listings .center .content .left a.container, .listings .center .content .middle a.container, .listings .center .content .right a.container, .listing-setup h1, .listings .center .content .left a.container h1, .listings .center .content .middle a.container h1, .listings .center .content .right a.container h1, .listing-setup h3, .listings .center .content .left a.container h3, .listings .center .content .middle a.container h3, .listings .center .content .right a.container h3, .listing-setup p.link, .listings .center .content .left a.container p.link, .listings .center .content .middle a.container p.link, .listings .center .content .right a.container p.link, .body, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, .container-setup {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.opaque {
+.opaque, .listing-setup:hover, .listings .center .content .left a.container:hover, .listings .center .content .middle a.container:hover, .listings .center .content .right a.container:hover {
   opacity: 0.75;
   filter: alpha(opacity=75);
 }
@@ -201,7 +201,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, .main {
+.font-helvetica, .listing-setup, .listings .center .content .left a.container, .listings .center .content .middle a.container, .listings .center .content .right a.container, .listing-setup h1, .listings .center .content .left a.container h1, .listings .center .content .middle a.container h1, .listings .center .content .right a.container h1, .main {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -217,11 +217,11 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, table#calendar tr, table#calendar td {
+.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .main .content .section img, .main .content .main img {
+.bg-gradient-primary, .listing-setup, .listings .center .content .left a.container, .listings .center .content .middle a.container, .listings .center .content .right a.container, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -334,7 +334,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .banner .center .content img.banner, .main .content .section img, .main .content .main img, .container-setup {
+.corner-all, .banner .center .content img.banner, .listing-setup, .listings .center .content .left a.container, .listings .center .content .middle a.container, .listings .center .content .right a.container, .listing-setup p.link, .listings .center .content .left a.container p.link, .listings .center .content .middle a.container p.link, .listings .center .content .right a.container p.link, .main .content .section img, .main .content .main img, .container-setup {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -1436,6 +1436,78 @@ div.ppt {
   padding: 0;
 }
 
+.listings {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.listings .center {
+  padding: 15px 0;
+  border-left: 1px solid #911b56;
+  border-right: 1px solid #911b56;
+}
+.listings .center .content {
+@extent .box;
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+.listings .center .content .left a.container {
+  margin: 15px 29px 15px 0;
+}
+.listings .center .content .middle a.container {
+  margin: 15px 29px 15px 0;
+}
+.listings .center .content .right a.container {
+  margin: 15px 0;
+}
+
+.listing-setup, .listings .center .content .left a.container, .listings .center .content .middle a.container, .listings .center .content .right a.container {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 280px;
+  height: 275px;
+  border: 1px solid #499ad6;
+  z-index: 20;
+}
+.listing-setup h1, .listings .center .content .left a.container h1, .listings .center .content .middle a.container h1, .listings .center .content .right a.container h1 {
+  position: relative;
+  top: 22.5px;
+  left: 22.5px;
+  margin: 0 22.5px 0 0;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  word-spacing: 0.1em;
+  letter-spacing: -0.05em;
+}
+.listing-setup h3, .listings .center .content .left a.container h3, .listings .center .content .middle a.container h3, .listings .center .content .right a.container h3 {
+  font-family: "EmbedFont-1";
+  position: relative;
+  top: 40px;
+  left: 22.5px;
+  margin: 0 22.5px 12px 0;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.3em;
+}
+.listing-setup p.link, .listings .center .content .left a.container p.link, .listings .center .content .middle a.container p.link, .listings .center .content .right a.container p.link {
+  font-family: "EmbedFont-1";
+  position: absolute;
+  bottom: 15px;
+  left: 22.5px;
+  display: inline;
+  color: #a71f63;
+  font-size: 11px;
+  font-weight: 200;
+  text-decoration: none;
+}
+.listing-setup:hover, .listings .center .content .left a.container:hover, .listings .center .content .middle a.container:hover, .listings .center .content .right a.container:hover {
+  text-decoration: none;
+}
+
 .body {
   position: relative;
   width: 100%;
@@ -1560,185 +1632,4 @@ div.ppt {
 .no-image h1, .no-image p {
   width: 900px;
   margin-left: 0 !important;
-}
-
-.contact-form iframe {
-  max-width: 600px;
-}
-
-table#calendar {
-  width: 100%;
-  border-collapse: none !important;
-  border: 1px solid #5ea6db;
-  margin: 30px 0;
-}
-table#calendar tr, table#calendar td {
-  padding: 0.5em;
-  color: #666666;
-  font-size: 12px;
-  font-weight: 200;
-  text-align: center;
-  line-height: 1.7em;
-}
-table#calendar td:hover {
-  background: #efefef !important;
-}
-table#calendar tr.header td {
-  padding: 6px;
-  font-size: 115%;
-  font-weight: bold;
-  color: white;
-  background: #8ccaee !important;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #dddddd;
-}
-table#calendar tr.month td {
-  padding: 6px;
-  font-size: 115%;
-  font-weight: bold;
-  color: white;
-  background: #a71f63 !important;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #a71f63;
-}
-table#calendar td.we {
-  background: #f4f4f4;
-}
-table#calendar td.blank {
-  background: transparent !important;
-}
-table#calendar td {
-  padding: 0px;
-  width: 14.28%;
-  border: 1px solid #dddddd;
-}
-table#calendar td p {
-  padding: 6px;
-  min-height: 50px;
-  text-align: center;
-  line-height: 1.1em;
-}
-
-#d1 {
-  background: url(/images/cal/1.png) 0 0 no-repeat;
-}
-
-#d2 {
-  background: url(/images/cal/2.png) 0 0 no-repeat;
-}
-
-#d3 {
-  background: url(/images/cal/3.png) 0 0 no-repeat;
-}
-
-#d4 {
-  background: url(/images/cal/4.png) 0 0 no-repeat;
-}
-
-#d5 {
-  background: url(/images/cal/5.png) 0 0 no-repeat;
-}
-
-#d6 {
-  background: url(/images/cal/6.png) 0 0 no-repeat;
-}
-
-#d7 {
-  background: url(/images/cal/7.png) 0 0 no-repeat;
-}
-
-#d8 {
-  background: url(/images/cal/8.png) 0 0 no-repeat;
-}
-
-#d9 {
-  background: url(/images/cal/9.png) 0 0 no-repeat;
-}
-
-#d10 {
-  background: url(/images/cal/10.png) 0 0 no-repeat;
-}
-
-#d11 {
-  background: url(/images/cal/11.png) 0 0 no-repeat;
-}
-
-#d12 {
-  background: url(/images/cal/12.png) 0 0 no-repeat;
-}
-
-#d13 {
-  background: url(/images/cal/13.png) 0 0 no-repeat;
-}
-
-#d14 {
-  background: url(/images/cal/14.png) 0 0 no-repeat;
-}
-
-#d15 {
-  background: url(/images/cal/15.png) 0 0 no-repeat;
-}
-
-#d16 {
-  background: url(/images/cal/16.png) 0 0 no-repeat;
-}
-
-#d17 {
-  background: url(/images/cal/17.png) 0 0 no-repeat;
-}
-
-#d18 {
-  background: url(/images/cal/18.png) 0 0 no-repeat;
-}
-
-#d19 {
-  background: url(/images/cal/19.png) 0 0 no-repeat;
-}
-
-#d20 {
-  background: url(/images/cal/20.png) 0 0 no-repeat;
-}
-
-#d21 {
-  background: url(/images/cal/21.png) 0 0 no-repeat;
-}
-
-#d22 {
-  background: url(/images/cal/22.png) 0 0 no-repeat;
-}
-
-#d23 {
-  background: url(/images/cal/23.png) 0 0 no-repeat;
-}
-
-#d24 {
-  background: url(/images/cal/24.png) 0 0 no-repeat;
-}
-
-#d25 {
-  background: url(/images/cal/25.png) 0 0 no-repeat;
-}
-
-#d26 {
-  background: url(/images/cal/26.png) 0 0 no-repeat;
-}
-
-#d27 {
-  background: url(/images/cal/27.png) 0 0 no-repeat;
-}
-
-#d28 {
-  background: url(/images/cal/28.png) 0 0 no-repeat;
-}
-
-#d29 {
-  background: url(/images/cal/29.png) 0 0 no-repeat;
-}
-
-#d30 {
-  background: url(/images/cal/30.png) 0 0 no-repeat;
-}
-
-#d31 {
-  background: url(/images/cal/31.png) 0 0 no-repeat;
 }
