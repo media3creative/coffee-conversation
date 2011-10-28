@@ -24,9 +24,9 @@
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #8ccaee, #5ea6db);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#8ccaee, endColorstr=#5ea6db);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#8ccaee, endColorstr=#5ea6db)";
 }
 
 .bg-gradient-reverse {
@@ -35,9 +35,9 @@
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #5ea6db, #8ccaee);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ea6db, endColorstr=#8ccaee);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ea6db, endColorstr=#8ccaee)";
 }
 
 .bg-gradient-secondary {
@@ -46,9 +46,9 @@
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #e02877, #a71f63);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e02877, endColorstr=#a71f63);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#e02877, endColorstr=#a71f63)";
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
@@ -227,9 +227,9 @@ b {
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #8ccaee, #5ea6db);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#8ccaee, endColorstr=#5ea6db);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#8ccaee, endColorstr=#5ea6db)";
 }
 
 .bg-gradient-reverse {
@@ -238,9 +238,9 @@ b {
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #5ea6db, #8ccaee);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ea6db, endColorstr=#8ccaee);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ea6db, endColorstr=#8ccaee)";
 }
 
 .bg-gradient-secondary {
@@ -249,9 +249,9 @@ b {
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #e02877, #a71f63);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e02877, endColorstr=#a71f63);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#e02877, endColorstr=#a71f63)";
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
