@@ -29,6 +29,8 @@ a
 a
   &:hover, &:active
     outline: none
+a:hover
+  cursor: pointer
 
 ul, ol
   margin-left: 2em
@@ -120,7 +122,6 @@ input:valid, textarea:valid
 
 input:invalid, textarea:invalid
   +border-radius(1px)
-  +box-shadow($invalid-box-shadow-color, 0px, 0px, 5px)
 
 .no-boxshadow
   input:invalid, textarea:invalid

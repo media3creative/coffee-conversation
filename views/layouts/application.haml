@@ -4,8 +4,30 @@
 - @link1 = ["Home", "/home"]
 - @link2 = ["About", "/about"]
 - @link3 = ["Services", "/services"]
-- @link4 = ["Calendar", "/calendar"]
+- @link4 = ["Events", "/events"]
 - @link5 = ["Contact", "/contact"]
+- @link6 = ["Businesses", "/businesses"]
+
+// SUB NAVIGATION
+- @link6A = ["Apparel / Accessories", "appacc"]
+- @link6B = ["Books", "books"]
+- @link6C = ["Business Services", "businesses"]
+- @link6D = ["Energy", "energy"]
+- @link6E = ["Event Planning", "events"]
+- @link6F = ["Food / Desserts", "food"]
+- @link6G = ["Gifts", "gifts"]
+- @link6H = ["Health &amp; Beauty", "healthbeauty"]
+- @link6I = ["Home Decor", "homedecor"]
+- @link6J = ["Home Parties", "homeparties"]
+- @link6K = ["Insurance", "insurance"]
+- @link6L = ["Jewelry", "jewelry"]
+- @link6M = ["Lawn & Garden", "lawngarden"]
+- @link6N = ["Legal Services", "legal"]
+- @link6O = ["Personal Services", "personal"]
+- @link6P = ["Photography", "photo"]
+- @link6Q = ["Real Estate", "realestate"]
+- @link6R = ["Travel", "travel"]
+
 
 // FOOTER LINKS
 - @linkA1 = ["Anna Jennings", "ssss"]
@@ -101,68 +123,68 @@
     
     
     // DROPDOWN MENU  
-    / :javascript
-    /   $(document).ready(function() {
-    / 
-    / 
-    /     function megaHoverOver(){
-    /       $(this).find(".sub").stop().fadeTo('fast', 1).show();
-    / 
-    /       //Calculate width of all ul's
-    /       (function($) { 
-    /         jQuery.fn.calcSubWidth = function() {
-    /           rowWidth = 0;
-    /           //Calculate row
-    /           $(this).find("ul").each(function() {          
-    /             rowWidth += $(this).width(); 
-    /           }); 
-    /         };
-    /       })(jQuery); 
-    / 
-    /       if ( $(this).find(".row").length > 0 ) { //If row exists...
-    /         var biggestRow = 0; 
-    /         //Calculate each row
-    /         $(this).find(".row").each(function() {                 
-    /           $(this).calcSubWidth();
-    /           //Find biggest row
-    /           if(rowWidth > biggestRow) {
-    /             biggestRow = rowWidth;
-    /           }
-    /         });
-    /         //Set width
-    /         $(this).find(".sub").css({'width' :biggestRow});
-    /         $(this).find(".row:last").css({'margin':'0'});
-    / 
-    /       } else { //If row does not exist...
-    / 
-    /         $(this).calcSubWidth();
-    /         //Set Width
-    /         $(this).find(".sub").css({'width' : rowWidth});
-    / 
-    /       }
-    /     }
-    / 
-    /     function megaHoverOut(){ 
-    /       $(this).find(".sub").stop().fadeTo('fast', 0, function() {
-    /         $(this).hide(); 
-    /       });
-    /     }
-    / 
-    / 
-    /     var config = {    
-    /        sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
-    /        interval: 100, // number = milliseconds for onMouseOver polling interval    
-    /        over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
-    /        timeout: 00, // number = milliseconds delay before onMouseOut    
-    /        out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
-    /     };
-    / 
-    /     $("ul#topnav li .sub").css({'opacity':'0'});
-    /     $("ul#topnav li").hoverIntent(config);
-    / 
-    / 
-    / 
-    /   });
+    :javascript
+      $(document).ready(function() {
+    
+    
+        function megaHoverOver(){
+          $(this).find(".sub").stop().fadeTo('fast', 1).show();
+    
+          //Calculate width of all ul's
+          (function($) { 
+            jQuery.fn.calcSubWidth = function() {
+              rowWidth = 0;
+              //Calculate row
+              $(this).find("ul").each(function() {          
+                rowWidth += $(this).width(); 
+              }); 
+            };
+          })(jQuery); 
+    
+          if ( $(this).find(".row").length > 0 ) { //If row exists...
+            var biggestRow = 0; 
+            //Calculate each row
+            $(this).find(".row").each(function() {                 
+              $(this).calcSubWidth();
+              //Find biggest row
+              if(rowWidth > biggestRow) {
+                biggestRow = rowWidth;
+              }
+            });
+            //Set width
+            $(this).find(".sub").css({'width' :biggestRow});
+            $(this).find(".row:last").css({'margin':'0'});
+    
+          } else { //If row does not exist...
+    
+            $(this).calcSubWidth();
+            //Set Width
+            $(this).find(".sub").css({'width' : rowWidth});
+    
+          }
+        }
+    
+        function megaHoverOut(){ 
+          $(this).find(".sub").stop().fadeTo('fast', 0, function() {
+            $(this).hide(); 
+          });
+        }
+    
+    
+        var config = {    
+           sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
+           interval: 100, // number = milliseconds for onMouseOver polling interval    
+           over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
+           timeout: 00, // number = milliseconds delay before onMouseOut    
+           out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
+        };
+    
+        $("ul#topnav li .sub").css({'opacity':'0'});
+        $("ul#topnav li").hoverIntent(config);
+    
+    
+    
+      });
 
     // GOOGLE ANALYTICS
     :javascript
@@ -194,19 +216,12 @@
           %li
             %a#two.topnav{:href => @link2[1]}
               =@link2[0]
-            .sub
-              %ul
-                / / %li
-                / /   %h2 Header
-                / %li
-                /   %a{:href => "#"} Navigation Link
-                / %li
-                /   %a{:href => "#"} Navigation Link
-                / %li
-                /   %a{:href => "#"} Navigation Link
           %li
             %a#three.topnav{:href => @link3[1]}
               =@link3[0]
+          %li
+            %a#six.topnav{:href => @link6[1]}
+              =@link6[0]
           %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]

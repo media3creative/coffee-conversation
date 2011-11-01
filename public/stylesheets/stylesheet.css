@@ -115,6 +115,10 @@ a:hover, a:active {
   outline: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 ul, ol {
   margin-left: 2em;
 }
@@ -209,10 +213,6 @@ input:invalid, textarea:invalid {
   -ms-border-radius: 1px;
   -khtml-border-radius: 1px;
   border-radius: 1px;
-  -moz-box-shadow: 0px 0px 5px red;
-  -webkit-box-shadow: 0px 0px 5px red;
-  -o-box-shadow: 0px 0px 5px red;
-  box-shadow: 0px 0px 5px red;
 }
 
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
@@ -418,8 +418,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .opaque {
-  opacity: 0.75;
-  filter: alpha(opacity=75);
+  opacity: 0.92 !important;
+  filter: alpha(opacity=92) !important;
 }
 
 .contact-form {

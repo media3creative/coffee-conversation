@@ -45,7 +45,7 @@
 ul#topnav
 	font-family: "EmbedFont-1"
 	+float-right
-	margin: 20px ($v-gap) 0 ($logoW + 5px + $h-gap)
+	margin: 20px 1px 0 ($logoW + 5px + $h-gap)
 	padding: 0
 	color: $nav-text
 	font-size: 11px
@@ -66,7 +66,7 @@ ul#topnav li a
 ul#topnav a.topnav
 	@extend .box
 	margin: 6px -1px 0 0
-	padding: .5em 2em .4em 2em
+	padding: .5em 1.8em .4em 1.8em
 	font-size: 13px
 	text-align: center
 	text-transform: uppercase
@@ -79,14 +79,14 @@ ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover
  
 ul#topnav li .sub 
 	@extend .corner-bottom
+	//@extend .opaque
 	display: none
 	position: absolute
 	+float-left
 	top: 2.7em
-	left: 1px
+	left: 0px
 	background: $nav-dropdown-bg
 	padding: 5px 0 6px 0
-	border-top: 2px solid $nav-dropdown-accent
 	z-index: 50
 
 ul#topnav li .row 
@@ -135,7 +135,7 @@ ul#topnav .sub ul li h2
 
 
 //Navigation Active Classes
-body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three
+body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six
 	@extend .navigation-hover
 
 .navigation-hover

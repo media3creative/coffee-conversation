@@ -178,8 +178,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .opaque {
-  opacity: 0.75;
-  filter: alpha(opacity=75);
+  opacity: 0.92 !important;
+  filter: alpha(opacity=92) !important;
 }
 
 .contact-form {

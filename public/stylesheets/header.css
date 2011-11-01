@@ -178,8 +178,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .opaque, #header .center #logo1 a:hover {
-  opacity: 0.75;
-  filter: alpha(opacity=75);
+  opacity: 0.92 !important;
+  filter: alpha(opacity=92) !important;
 }
 
 .contact-form {
@@ -378,7 +378,7 @@ ul#topnav {
   font-family: "EmbedFont-1";
   display: inline;
   float: right;
-  margin: 20px 30px 0 235px;
+  margin: 20px 1px 0 235px;
   padding: 0;
   color: #499ad6;
   font-size: 11px;
@@ -403,7 +403,7 @@ ul#topnav li a {
 
 ul#topnav a.topnav {
   margin: 6px -1px 0 0;
-  padding: 0.5em 2em 0.4em 2em;
+  padding: 0.5em 1.8em 0.4em 1.8em;
   font-size: 13px;
   text-align: center;
   text-transform: uppercase;
@@ -422,10 +422,9 @@ ul#topnav li .sub {
   display: inline;
   float: left;
   top: 2.7em;
-  left: 1px;
+  left: 0px;
   background: #499ad6;
   padding: 5px 0 6px 0;
-  border-top: 2px solid #a71f63;
   z-index: 50;
 }
 
@@ -461,7 +460,7 @@ ul#topnav .sub ul li a {
   height: auto;
   margin: 0;
   padding: 0.5em 1em;
-  color: #666666;
+  color: white;
   background: #499ad6;
   text-indent: 0;
   text-decoration: none;
@@ -479,6 +478,6 @@ ul#topnav .sub ul li h2 {
   font-weight: bolder;
 }
 
-.navigation-hover, body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three {
+.navigation-hover, body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six {
   color: white;
 }

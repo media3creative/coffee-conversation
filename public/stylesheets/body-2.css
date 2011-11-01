@@ -14,7 +14,7 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, table#services tr, table#services td {
+.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -170,7 +170,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: white;
 }
 
-.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .form h1, .button h1, .subnav h3, .text h3, .form h3, .button h3, .link, .link p, .text p, .form p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, table#services, table#services tr, table#services td, .container-setup, .subnav, .text, .form, .button {
+.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .form h1, .button h1, .subnav h3, .text h3, .form h3, .button h3, .link, .link p, .text p, .form p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, .container-setup, .subnav, .text, .form, .button {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -178,8 +178,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .opaque {
-  opacity: 0.75;
-  filter: alpha(opacity=75);
+  opacity: 0.92 !important;
+  filter: alpha(opacity=92) !important;
 }
 
 .contact-form, .form {
@@ -217,7 +217,7 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, table#services tr, table#services td {
+.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -438,7 +438,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 auto;
   padding: 0.5em 0;
   font-size: 11px;
-  border-bottom: 1px dotted #dddddd;
+  border-bottom: 1px dotted #499ad6;
 }
 .link:last-child {
   border-bottom: none;
@@ -453,7 +453,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   top: 5px;
   width: 7px;
   height: 7px;
-  background: #a71f63;
+  background: #499ad6;
   font-size: 11px;
   text-align: center;
 }
@@ -539,7 +539,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .main .content .section, .main .content .main {
   position: relative;
   padding: 0 0 30px 0;
-  border-bottom: 1px dotted #a71f63;
 }
 .main .content .section:last-child, .main .content .main:last-child {
   padding-bottom: 0;
@@ -557,7 +556,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .main .content .section h1, .main .content .main h1 {
   width: 375px;
   margin: 0px 0 10px 215px;
-  padding: 0 3em 0.5em 0px;
+  padding: 0 3em 0 0px;
   color: #8ccaee !important;
   font-size: 22px;
   font-weight: bolder;
@@ -594,47 +593,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .main .content .section p a:hover, .main .content .main p a:hover {
   color: #5ea6db;
-}
-
-table#services {
-  border-collapse: none !important;
-  border: 1px solid #5ea6db;
-  margin: 30px 0;
-}
-table#services tr, table#services td {
-  padding: 0.5em;
-  color: #666666;
-  font-size: 12px;
-  font-weight: 200;
-  text-align: center;
-  line-height: 1.7em;
-}
-table#services tr.header td {
-  font-size: 115%;
-  font-weight: bold;
-  color: white;
-  background: #8ccaee;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #dddddd;
-}
-table#services tr:hover {
-  background: #efefef;
-}
-table#services td.blank {
-  background: transparent !important;
-}
-table#services td.type {
-  min-width: 150px;
-  text-align: left;
-}
-table#services td {
-  border: 1px solid #dddddd;
-}
-table#services td.n {
-  background: url(/images/x.png) center center no-repeat;
-}
-table#services td.y {
-  background: url(/images/v.png) center center no-repeat;
 }
 
 .container-setup, .subnav, .text, .form, .button {
@@ -676,4 +634,9 @@ table#services td.y {
 .no-image h1, .no-image p {
   width: 590px !important;
   margin-left: 0 !important;
+}
+
+p.page-top {
+  text-align: right !important;
+  padding-right: 15px !important;
 }

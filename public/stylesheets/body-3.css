@@ -177,9 +177,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   box-sizing: border-box;
 }
 
-.opaque, .listing-setup:hover, .listings .center .content .left a.container:hover, .listings .center .content .middle a.container:hover, .listings .center .content .right a.container:hover {
-  opacity: 0.75;
-  filter: alpha(opacity=75);
+.opaque {
+  opacity: 0.92 !important;
+  filter: alpha(opacity=92) !important;
 }
 
 .contact-form {
@@ -1467,7 +1467,7 @@ div.ppt {
   display: inline;
   float: left;
   width: 280px;
-  height: 275px;
+  height: 290px;
   border: 1px solid #499ad6;
   z-index: 20;
 }
@@ -1506,6 +1506,16 @@ div.ppt {
 }
 .listing-setup:hover, .listings .center .content .left a.container:hover, .listings .center .content .middle a.container:hover, .listings .center .content .right a.container:hover {
   text-decoration: none;
+  cursor: default;
+}
+
+form.paypal {
+  position: relative;
+  display: inline;
+  width: 100px;
+  clear: none;
+  top: 5px;
+  left: 10px;
 }
 
 .body {

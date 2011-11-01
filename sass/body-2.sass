@@ -111,7 +111,7 @@
 	margin: 0 auto
 	padding: 0.5em 0
 	font-size: 11px
-	border-bottom: 1px dotted $line-color
+	border-bottom: 1px dotted $primary-dark
 	&:last-child
 		border-bottom: none
 		margin-bottom: ($v-gap / 2)
@@ -124,7 +124,7 @@
 		top: 5px
 		width: 7px
 		height: 7px
-		background: $secondary
+		background: $primary-dark
 		font-size: 11px
 		text-align: center
 	p
@@ -213,7 +213,7 @@
 			@extend .clearfix
 			position: relative
 			padding: 0 0 ($v-gap) 0
-			border-bottom: 1px dotted $section-border
+			//border-bottom: 1px dotted $section-border
 			&:last-child
 				padding-bottom: 0
 				border-bottom: none
@@ -232,7 +232,7 @@
 				@extend .box
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
 				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
-				padding: 0 3em 0.5em $corner-radius
+				padding: 0 3em 0 $corner-radius
 				color: $section-title !important
 				font-size: 22px
 				font-weight: bolder
@@ -269,40 +269,6 @@
 					&:hover
 						color: $primary
 
-table#services
-	@extend .box
-	border-collapse: none !important
-	border: 1px solid $primary
-	margin: $v-gap 0
-	tr, td
-		@extend .font-base
-		@extend .box
-		padding: .5em
-		color: $section-text
-		font-size: 12px
-		font-weight: 200
-		text-align: center
-		line-height: 1.7em
-	tr.header td
-		font-size: 115%
-		font-weight: bold
-		color: #fff
-		background: $primary-light
-		border: 1px solid transparent
-		border-bottom: 1px solid $line-color
-	tr:hover
-		background: #efefef
-	td.blank
-		background: transparent !important
-	td.type
-		min-width: 150px
-		text-align: left
-	td
-		border: 1px solid $line-color
-	td.n
-		background: url(/images/x.png) center center no-repeat
-	td.y
-		background: url(/images/v.png) center center no-repeat
 .container-setup
 	@extend .box
 	@extend .corner-all
@@ -349,3 +315,6 @@ table#services
 		width: $content-width !important
 		margin-left: 0 !important
 
+p.page-top
+	text-align: right !important
+	padding-right: ($h-gap /2) !important
