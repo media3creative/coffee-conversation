@@ -1,0 +1,31 @@
+// BEAUTY & HEALTH
+
+.section.no-image
+  %h1=@link6B[0]
+  %p
+    %a{:href => @link6[1]} << Back of Categories
+
+  %h4 Little Folks Dance & Fitness
+  %p
+    %b Chaka Jones
+    = " | "
+    %a{:href => "http://www.littlefolksdance.com", :target => "_blank"} littlefolksdance.com
+    = " | "
+    %a{:href =>"mailto:info@littlefolksdance.com"} info@littlefolksdance.com
+  %img{:src => "/images/businesses/2-littlefolks.jpg"}
+  %p
+    %b Details:
+    %br
+    Little Folks Dance & Fitness is a mobile dance school that travels to daycare, private schools and homes so children can benefit form the joys of Dance and Fitness without interrupting a parent's busy schedule.
+  %a{:name => "hide1", :onclick => "return toggleMe('hide1')"}
+  #hide1{:style => "display:none"}
+    %p
+      Having a birthday party? We also provide unique and unforgettable birthday party experiences. Children's dress-up birthday parties, fairy and princess parties, etc. A Little Folks party is the best!
+    %p
+      Girl Scouts: Have fun while earning your badges! Visit our website for more detail...
+
+  %p.hide.page-top
+    %a{:onclick => "return toggleMe('hide1')", :href => "#hide1"}^ Show / Hide More
+  
+
+
