@@ -39,7 +39,30 @@
           %h3 We offer promotion and marketing for the small business on a small budget!
           %p.link Learn More  >
       #one.right
-        %a.container{:href => "/contact"}
-          %h1 Contact Us
-          %h3 Send us your questions, comments, and general feedback
-          %p.link Get Started  >
+        %a.container
+          %h1 Subscribe
+          %h3 Stay in-the-know with the AnnaKnows Newsletter
+
+          %link{:href => "http://cdn-images.mailchimp.com/embedcode/slim-081711.css", :rel => "stylesheet", :type => "text/css"}
+          %form{:action => "http://annaknows.us2.list-manage.com/subscribe/post", :method => "POST"}
+            %input{:name => "u", :type => "hidden", :value => "4bb416bf0b00021eb6b111e89"}/
+            %input{:name => "id", :type => "hidden", :value => "61d6de444a"}/
+            #mergeTable.mergeTable
+              #mergeRow-0.mergeRow.dojoDndItem.mergeRow-email
+                %label{:for => "MERGE0"}
+                  %strong Email Address
+                  %span.asterisk *
+                .field-group
+                  %input#MERGE0{:autocapitalize => "off", :autocorrect => "off", :name => "MERGE0", :size => "10", :type => "email", :value => ""}/
+              #mergeRow-1.mergeRow.dojoDndItem.mergeRow-text
+                %label{:for => "MERGE1"} First Name
+                .field-group
+                  %input#MERGE1{:name => "MERGE1", :size => "25", :type => "text", :value => ""}/
+              #mergeRow-2.mergeRow.dojoDndItem.mergeRow-text
+                %label{:for => "MERGE2"} Last Name
+                .field-group
+                  %input#MERGE2{:name => "MERGE2", :size => "25", :type => "text", :value => ""}/
+            .mergeRow
+            %br/
+            .submit_container
+              %input.button{:name => "submit", :type => "submit", :value => "Subscribe to list"}/
