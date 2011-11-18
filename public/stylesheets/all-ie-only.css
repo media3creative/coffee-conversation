@@ -12,7 +12,24 @@ h1, h2, h3, h4, h5, h6, p, a {
 	text-align: left; !important
 }
 
+#footer .row h1, h2, h3, h4, h5, h6, p, a {
+	text-align: center; !important
+}
+
+
 .m3c-bar p {
 	color: #fff;
 	font-size: 9px !important
+}
+
+.left a.container, .left a.container:hover {
+	background: url(/images/home_left.jpg) no-repeat !important;
+}
+
+.middle a.container, .middle a.container:hover {
+	background: url(/images/home_center.jpg) no-repeat !important;
+}
+
+.right .container, .right .container:hover {
+	background: url(/images/home_right.jpg) no-repeat !important;
 }

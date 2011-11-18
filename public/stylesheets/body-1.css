@@ -1,4 +1,4 @@
-.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
+.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right .container h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -131,7 +131,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right .container p.link {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -144,16 +144,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.clearfix, .body, .body .center, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.clearfix, .body, .body .center, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container {
   zoom: 1;
 }
-.clearfix:before, .body:before, .body .center:before, .container-setup:before, .body .center .content .left a.container:before, .body .center .content .middle a.container:before, .body .center .content .right a.container:before {
+.clearfix:before, .body:before, .body .center:before, .container-setup:before, .body .center .content .left a.container:before, .body .center .content .middle a.container:before, .body .center .content .right .container:before {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.clearfix:after, .body:after, .body .center:after, .container-setup:after, .body .center .content .left a.container:after, .body .center .content .middle a.container:after, .body .center .content .right a.container:after {
+.clearfix:after, .body:after, .body .center:after, .container-setup:after, .body .center .content .left a.container:after, .body .center .content .middle a.container:after, .body .center .content .right .container:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -170,14 +170,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: white;
 }
 
-.box, .center-container, .body .center, .body, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.box, .center-container, .body .center, .body, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right .container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right .container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right .container p.link, form.mailchimp {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.opaque, .container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right a.container:hover {
+.opaque, .container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right .container:hover {
   opacity: 0.92 !important;
   filter: alpha(opacity=92) !important;
 }
@@ -201,7 +201,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
+.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right .container h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -221,7 +221,7 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -334,7 +334,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right .container p.link {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -365,18 +365,18 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .body .center .content .left a.container {
   margin: 0px 29px 0 0;
-  background: transparent url(/images/home_left.jpg) no-repeat;
+  background: url(/images/home_left.jpg) no-repeat;
 }
 .body .center .content .middle a.container {
   margin: 0px 29px 0 0;
-  background: transparent url(/images/home_center.jpg) no-repeat;
+  background: url(/images/home_center.jpg) no-repeat;
 }
-.body .center .content .right a.container {
+.body .center .content .right .container {
   margin: 0;
-  background: transparent url(/images/home_right.jpg) no-repeat;
+  background: url(/images/home_right.jpg) no-repeat;
 }
 
-.container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container {
   position: relative;
   display: inline;
   float: left;
@@ -385,7 +385,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border: 1px solid #499ad6;
   z-index: 20;
 }
-.container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
+.container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right .container h1 {
   position: absolute;
   top: 22.5px;
   left: 22.5px;
@@ -397,7 +397,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   word-spacing: 0.1em;
   letter-spacing: -0.05em;
 }
-.container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3 {
+.container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right .container h3 {
   font-family: "EmbedFont-1";
   position: absolute;
   top: 75px;
@@ -408,7 +408,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-weight: 200;
   line-height: 1.3em;
 }
-.container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.container-setup h3.mailchimp, .body .center .content .left a.container h3.mailchimp, .body .center .content .middle a.container h3.mailchimp, .body .center .content .right .container h3.mailchimp {
+  margin: 0 15px 12px 0;
+}
+.container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right .container p.link {
   font-family: "EmbedFont-1";
   position: absolute;
   bottom: 15px;
@@ -419,6 +422,30 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-weight: 200;
   text-decoration: none;
 }
-.container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right a.container:hover {
+.container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right .container:hover {
   text-decoration: none;
+}
+
+form.mailchimp {
+  position: absolute;
+  font-family: "EmbedFont-1";
+  color: white;
+  top: 73px;
+  left: 22.5px;
+}
+form.mailchimp label {
+  font-size: 12px;
+}
+form.mailchimp input {
+  font-size: 11px;
+}
+
+.mergeRow {
+  display: inline;
+  float: left;
+  padding: 0 10px 5px 0;
+}
+
+.submit_container {
+  margin: 7px 0 0 -3px;
 }

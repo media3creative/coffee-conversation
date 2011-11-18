@@ -29,17 +29,17 @@
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					background: transparent url(/images/home_left.jpg) no-repeat
+					background: url(/images/home_left.jpg) no-repeat
 			.middle
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					background: transparent url(/images/home_center.jpg) no-repeat
+					background: url(/images/home_center.jpg) no-repeat
 			.right
-				a.container
+				.container
 					@extend .container-setup
 					margin: 0
-					background: transparent url(/images/home_right.jpg) no-repeat
+					background: url(/images/home_right.jpg) no-repeat
 
 
 .container-setup
@@ -47,7 +47,6 @@
 	@extend .corner-all
 	@extend .font-helvetica
 	@extend .clearfix
-	@extend .bg-gradient-primary
 	position: relative
 	+float-left
 	width: (($inside-width - ($h-gap * 2)) / 3)
@@ -79,6 +78,8 @@
 		font-size: 12px
 		font-weight: 200
 		line-height: 1.3em
+	h3.mailchimp
+		margin: 0 15px 12px 0
 	p.link
 		@extend .box
 		@extend .corner-all
@@ -96,6 +97,24 @@
 		@extend .opaque
 		
 		
+		
+form.mailchimp
+	@extend .box
+	position: absolute
+	font-family: "EmbedFont-1"
+	color: #fff
+	top: 73px
+	left: ($h-gap * 0.75)
+	label
+		font-size: 12px
+	input
+		font-size: 11px
+.mergeRow
+	+float-left
+	padding: 0 10px 5px 0
+.submit_container
+	margin: 7px 0 0 -3px
+
 		
 		
 		
