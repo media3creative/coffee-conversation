@@ -373,7 +373,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .body .center .content .right .container {
   margin: 0;
-  background: url(/images/home_right.jpg) no-repeat;
+  background: url(/images/home_rightMC.jpg) no-repeat;
 }
 
 .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container {
