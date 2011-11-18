@@ -8,8 +8,6 @@
 @import partials/color
 @import partials/corners
 
-@import partials/gallery
-
 
 .banner
 	@extend .box
@@ -78,14 +76,14 @@
 	position: relative
 	+float-left
 	width: (($inside-width - ($h-gap * 2)) / 3)
-	height: 290px
+	min-height: 305px
 	//background: $option-bg
 	border: 1px solid $option-border
 	z-index: 20
 	h1
 		@extend .box
 		@extend .font-helvetica
-		position: relative
+		position: absolute
 		top: ($v-gap * 0.75)
 		left: ($h-gap * 0.75)
 		margin: 0 ($h-gap * 0.75) 0 0
@@ -97,8 +95,8 @@
 	h3
 		@extend .box
 		font-family: "EmbedFont-1"
-		position: relative
-		top: 40px
+		position: absolute
+		top: 65px
 		left: ($h-gap * 0.75)
 		margin: 0 ($h-gap * 0.75) 12px 0
 		color: $option-text
@@ -130,23 +128,6 @@ form.paypal
 	top: 5px
 	left: 10px
 
-.body
-	@extend .box
-	@extend .clearfix
-	position: relative
-	width: 100%
-	margin: 0 auto
-	.center
-		@extend .center-container
-		@extend .clearfix
-		padding: ($v-gap/2) 0
-		border-left: 1px solid $secondary-dark
-		border-right: 1px solid $secondary-dark
-		.content
-			@extent .box
-			width: $inside-width
-			margin: 0 auto
-			padding: 0
 
 
 
@@ -165,7 +146,7 @@ form.paypal
 			@extend .box
 			@extend .clearfix
 			position: relative
-			padding: 0 0 ($v-gap) 0
+			padding: 0 0 0 0
 			border-bottom: 1px dotted $section-border
 			&:last-child
 				padding-bottom: 0
@@ -222,37 +203,6 @@ form.paypal
 					&:hover
 						color: $primary
 					
-
-.container-setup
-	@extend .box
-	@extend .corner-all
-	@extend .clearfix
-	position: relative
-	+float-left
-	clear: both
-	width: $sidebar-width
-	margin: 0 0 $v-gap 0
-	background: $option-bg
-	border: 1px solid $option-border
-	z-index: 20
-
-.columns
-	@extend .clearfix
-	width: 100%
-	.colL
-		position: relative
-		+float-left
-		clear: left
-		width: (($content-width - $h-gap) / 2)
-		margin: 0 $h-gap 0 0
-	.colR
-		position: relative
-		+float-left
-		clear: right
-		width: (($content-width - $h-gap) / 2)
-		margin: 0
-
-
 
 // Needed to add dotted line between page sections
 .spacer
