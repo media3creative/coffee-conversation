@@ -13,66 +13,43 @@
 	position: relative
 	width: 100%
 	margin: 0 auto
-	//background: $image-slider-bg
 	.center
 		@extend .center-container
 		padding: $v-gap 0 ($v-gap/2)
-		border-left: 1px solid $secondary-dark
-		border-right: 1px solid $secondary-dark
 		.captionContainer
 			@extend .box
 			position: absolute
-			width: $inside-width
+			width: $slider-width
 			//height: 80px
-			top: 200px
+			top: 193px
 			left: 0
 			margin: 0
 			padding: 5px
-			background: $secondary
+			background: url(/images/bg-trans.png) repeat
 			h1
 				@extend .box
-				@extend .font-Helvetica
-				margin: 5px 15px
+				font-family: "EmbedFont-1"
+				margin: 7px 15px
 				padding: 0
-				color: $image-slider-title
+				color: $tan
 				//opacity: 0.85
-				font-size: 30px
-				font-weight: bolder
+				font-size: 32px
+				font-weight: 100
 				text-align: left
 				line-height: 1em
 				word-spacing: .1em
-				letter-spacing: -0.05em
 			h3
-				@extend .font-base
-				//@extend .corner-right
 				@extend .box
+				font-family: "EmbedFont-2"
 				position: relative
 				top: 0px
-				margin: 0 15px 10px
+				margin: 1em 15px 0.7em
 				padding: 0
-				color: $gray-light
-				//background: $secondary
-				//opacity: 0.85
-				font-size: 14px
+				color: $tan
+				font-size: 16px
 				font-weight: 200
 				text-align: left
 				line-height: 1.1em
-				//word-spacing: .05em
-				//letter-spacing: .025em
-				//border: 1px solid #000
-				&:hover
-					//opacity: 0.75
-			p.link
-				@extend .bg-gradient-primary
-				@extend .box
-				@extend .corner-all
-				position: absolute
-				bottom: ($v-gap/2)
-				right: $h-gap
-				color: $image-slider-link	
-				border: 1px solid $primary
-				&:hover
-					@extend .bg-gradient-reverse
 				a
 					font-family: "EmbedFont-1"
 					display: block
@@ -91,7 +68,7 @@
 	@extend .box
 	@extend .corner-all
 	position: relative
-	width: $inside-width
+	width: $slider-width
 	height: $slider-height
 
 .nivoSlider img 
@@ -100,7 +77,7 @@
 	position: absolute
 	top: 0px
 	left: 0px
-	width: $inside-width
+	width: $slider-width
 	height: $slider-height
 
 // If an image is wrapped in a link //
@@ -157,7 +134,7 @@
 	
 .nivo-directionNav a 
 	position: absolute
-	top: 79%
+	top: 89.7%
 	z-index: 9
 	cursor: pointer
 	display: block
@@ -187,20 +164,20 @@ a.nivo-nextNav
 #slider-wrapper 
 	@extend .box
 	@extend .corner-all
-	@extend .font-helvetica
 	position: relative
 	width: $inside-width
-	height: $slider-height
+	height: $slider-height + 20px
 	margin: 0 auto
+	padding: 10px
 	overflow: hidden
-	border: 1px solid $image-slider-border	
-	background: $image-slider-bg
+	border: 1px solid $brown-lt	
+	background: $brown-md
 
 #slider
 	@extend .box
 	@extend .corner-all
 	position: relative
-	width: $inside-width
+	width: $slider-width
 	height: $slider-height
 
 #slider img 

@@ -1,44 +1,20 @@
-- @sitename = "Anna Knows"
+- @sitename = "Coffee &amp; Conversation"
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["About", "/about"]
+- @link2 = ["About Us", "/about"]
 - @link3 = ["Services", "/services"]
 - @link4 = ["Events", "/events"]
 - @link5 = ["Contact", "/contact"]
-- @link6 = ["Businesses", "/businesses"]
-
-// SUB NAVIGATION
-- @link6A = ["Apparel / Accessories", "appacc"]
-- @link6B = ["Books", "books"]
-- @link6C = ["Business Services", "businesses"]
-- @link6D = ["Energy", "energy"]
-- @link6E = ["Event Planning", "events"]
-- @link6F = ["Food / Desserts", "food"]
-- @link6G = ["Gifts", "gifts"]
-- @link6H = ["Health &amp; Beauty", "healthbeauty"]
-- @link6I = ["Home Decor", "homedecor"]
-- @link6J = ["Home Parties", "homeparties"]
-- @link6K = ["Insurance", "insurance"]
-- @link6L = ["Jewelry", "jewelry"]
-- @link6M = ["Lawn & Garden", "lawngarden"]
-- @link6N = ["Legal Services", "legal"]
-- @link6O = ["Personal Services", "personal"]
-- @link6P = ["Photography", "photo"]
-- @link6Q = ["Real Estate", "realestate"]
-- @link6R = ["Travel", "travel"]
-
 
 // FOOTER LINKS
-- @linkA1 = ["Anna Jennings", "ssss"]
-- @linkA2 = ["(713) 398-8474", "ssss"]
-- @linkA3 = ["anna@annaknows.com", "mailto:anna@annaknows.com"]
-- @linkA4 = ["Terms of Service", "/terms"]
-- @linkA5 = ["link name", "/path"]
+- @linkA1 = ["ssss", "ssss"]
+- @linkA2 = ["803-702-2055", "ssss"]
+- @linkA3 = ["info@coffeeandconversation.com", "info@coffeeandconversation.com"]
 
-- @linkB1 = ["Facebook", "http://www.facebook.com/annaknowsfanpage"]
-- @linkB2 = ["Twitter", "http://twitter.com/annaknowscom"]
-- @linkB3 = ["LinkedIn", "http://www.linkedin.com/in/annaknows"]
+- @linkB1 = ["Facebook", "http://www.facebook.com/name"]
+- @linkB2 = ["Twitter", "http://twitter.com/name"]
+- @linkB3 = ["LinkedIn", "http://www.linkedin.com/in/name"]
 - @linkB4 = ["link name", "/path"]
 - @linkB5 = ["link name", "/path"]
 
@@ -209,22 +185,18 @@
         #logo1
           %a{:href => @link1[1]}
             %img{:src => "/images/logo.png", :alt => ""+@sitename+" Logo"}
+    #navigation
+      .center
         %ul#topnav
           %li
             %a#one.topnav{:href => @link1[1]}
               =@link1[0]
           %li
-            %a#two.topnav{:href => @link2[1]}
-              =@link2[0]
-          %li
             %a#three.topnav{:href => @link3[1]}
               =@link3[0]
           %li
-            %a#six.topnav{:href => @link6[1]}
-              =@link6[0]
-          %li
-            %a#four.topnav{:href => @link4[1]}
-              =@link4[0]
+            %a#two.topnav{:href => @link2[1]}
+              =@link2[0]
           %li
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]
@@ -240,20 +212,13 @@
             %p.logo-sm
               %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
               %br
-              Anna Knows | Dedicated to connecting the consumer and business owner
+              &nbsp;
           .row
             %p
-              =@linkA1[0]
-              =" | "
               =@linkA2[0]
               =" | "
               %a{:href => @linkA3[1]}
                 =@linkA3[0]
-              =" | "
-              %a{:href => @linkA4[1]}
-                =@linkA4[0]
-          .row
-            %p
               %a{:href => @linkB1[1], :target => "_blank"} 
                 %img.icon{:src => "/images/facebook-color.png"}
                 =@linkB1[0]              

@@ -1,4 +1,4 @@
-.font-helvetica, #slider-wrapper {
+.font-helvetica {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -14,11 +14,11 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .image-slider .center .captionContainer h3 {
+.font-trebuchet, .font-base {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .image-slider .center .captionContainer p.link {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -29,7 +29,7 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#8ccaee, endColorstr=#5ea6db)";
 }
 
-.bg-gradient-reverse, .image-slider .center .captionContainer p.link:hover {
+.bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#5ea6db), to(#8ccaee));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -52,11 +52,13 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {
@@ -131,7 +133,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .image-slider .center .captionContainer p.link, .nivoSlider, #slider-wrapper, #slider {
+.corner-all, .nivoSlider, #slider-wrapper, #slider {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -167,10 +169,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 
-.box, .center-container, .image-slider .center, .image-slider, .image-slider .center .captionContainer, .image-slider .center .captionContainer h1, .image-slider .center .captionContainer h3, .image-slider .center .captionContainer p.link, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
+.box, .center-container, .image-slider .center, .image-slider, .image-slider .center .captionContainer, .image-slider .center .captionContainer h1, .image-slider .center .captionContainer h3, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -201,7 +203,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, #slider-wrapper {
+.font-helvetica {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -217,11 +219,11 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .image-slider .center .captionContainer h3 {
+.font-trebuchet, .font-base {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .image-slider .center .captionContainer p.link {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -232,7 +234,7 @@ b {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#8ccaee, endColorstr=#5ea6db)";
 }
 
-.bg-gradient-reverse, .image-slider .center .captionContainer p.link:hover {
+.bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#5ea6db), to(#8ccaee));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -255,11 +257,13 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {
@@ -334,7 +338,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .image-slider .center .captionContainer p.link, .nivoSlider, #slider-wrapper, #slider {
+.corner-all, .nivoSlider, #slider-wrapper, #slider {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -354,48 +358,40 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .image-slider .center {
   padding: 30px 0 15px;
-  border-left: 1px solid #911b56;
-  border-right: 1px solid #911b56;
 }
 .image-slider .center .captionContainer {
   position: absolute;
-  width: 900px;
-  top: 200px;
+  width: 880px;
+  top: 193px;
   left: 0;
   margin: 0;
   padding: 5px;
-  background: #a71f63;
+  background: url(/images/bg-trans.png) repeat;
 }
 .image-slider .center .captionContainer h1 {
-  margin: 5px 15px;
+  font-family: "EmbedFont-1";
+  margin: 7px 15px;
   padding: 0;
-  color: #8ccaee;
-  font-size: 30px;
-  font-weight: bolder;
+  color: #c3b59b;
+  font-size: 32px;
+  font-weight: 100;
   text-align: left;
   line-height: 1em;
   word-spacing: 0.1em;
-  letter-spacing: -0.05em;
 }
 .image-slider .center .captionContainer h3 {
+  font-family: "EmbedFont-2";
   position: relative;
   top: 0px;
-  margin: 0 15px 10px;
+  margin: 1em 15px 0.7em;
   padding: 0;
-  color: #efefef;
-  font-size: 14px;
+  color: #c3b59b;
+  font-size: 16px;
   font-weight: 200;
   text-align: left;
   line-height: 1.1em;
 }
-.image-slider .center .captionContainer p.link {
-  position: absolute;
-  bottom: 15px;
-  right: 30px;
-  color: white;
-  border: 1px solid #5ea6db;
-}
-.image-slider .center .captionContainer p.link a {
+.image-slider .center .captionContainer h3 a {
   font-family: "EmbedFont-1";
   display: block;
   padding: 9px 2em 8px 2em;
@@ -408,16 +404,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .nivoSlider {
   position: relative;
-  width: 900px;
-  height: 300px;
+  width: 880px;
+  height: 344px;
 }
 
 .nivoSlider img {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 900px;
-  height: 300px;
+  width: 880px;
+  height: 344px;
 }
 
 .nivoSlider a.nivo-imageLink {
@@ -478,7 +474,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .nivo-directionNav a {
   position: absolute;
-  top: 79%;
+  top: 89.7%;
   z-index: 9;
   cursor: pointer;
   display: block;
@@ -511,17 +507,18 @@ a.nivo-nextNav {
 #slider-wrapper {
   position: relative;
   width: 900px;
-  height: 300px;
+  height: 364px;
   margin: 0 auto;
+  padding: 10px;
   overflow: hidden;
-  border: 1px solid #dddddd;
-  background: #efefef;
+  border: 1px solid #5d3919;
+  background: #2d1d10;
 }
 
 #slider {
   position: relative;
-  width: 900px;
-  height: 300px;
+  width: 880px;
+  height: 344px;
 }
 
 #slider img {
@@ -560,7 +557,7 @@ a.nivo-nextNav {
 .nivo-caption {
   position: absolute;
   top: 0;
-  height: 300px;
+  height: 344px;
 }
 
 .nivo-caption {

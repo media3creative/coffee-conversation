@@ -18,8 +18,6 @@
 		@extend .center-container
 		@extend .clearfix
 		padding: ($v-gap/2) 0
-		border-left: 1px solid $secondary-dark
-		border-right: 1px solid $secondary-dark
 		.content
 			@extent .box
 			width: $inside-width
@@ -29,17 +27,17 @@
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					background: url(/images/home_left.jpg) no-repeat
+					//background: url(/images/home_left.jpg) no-repeat
 			.middle
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					background: url(/images/home_center.jpg) no-repeat
+					//background: url(/images/home_center.jpg) no-repeat
 			.right
 				.container
 					@extend .container-setup
 					margin: 0
-					background: url(/images/home_rightMC.jpg) no-repeat
+					//background: url(/images/home_rightMC.jpg) no-repeat
 
 
 .container-setup
@@ -51,50 +49,42 @@
 	+float-left
 	width: (($inside-width - ($h-gap * 2)) / 3)
 	height: $option-height
-	//background: $option-bg
-	border: 1px solid $option-border
+	background: $brown-md
+	border: 1px solid $brown-lt
 	z-index: 20
 	h1
 		@extend .box
-		@extend .font-helvetica
+		font-family: "EmbedFont-1"
 		position: absolute
 		top: ($v-gap * 0.75)
 		left: ($h-gap * 0.75)
 		margin: 0 ($h-gap * 0.75) 0 0
-		color: $option-title
-		font-size: 24px
-		font-weight: bold
-		text-shadow: 1px 1px 1px $primary
+		color: $tan
+		font-size: 22px
+		font-weight: 100
 		word-spacing: .1em
-		letter-spacing: -0.05em
 	h3
 		@extend .box
-		font-family: "EmbedFont-1"
+		font-family: "EmbedFont-2"
 		position: absolute
 		top: 75px
 		left: ($h-gap * 0.75)
-		margin: 0 110px 12px 0
-		color: $option-text
-		font-size: 12px
+		margin: 0 95px 12px 0
+		color: $tan
+		font-size: 14px
 		font-weight: 200
 		line-height: 1.3em
-	h3.mailchimp
-		margin: 0 15px 12px 0
 	p.link
 		@extend .box
-		@extend .corner-all
-		font-family: "EmbedFont-1"
+		font-family: "EmbedFont-2"
 		position: absolute
 		bottom: ($v-gap * 0.5)
 		left: ($h-gap * 0.75)
 		display: inline
-		color: $option-link
-		font-size: 11px
-		font-weight: 200
+		color: $red
+		font-size: 12px
+		font-weight: 100
 		text-decoration: none
-	&:hover
-		text-decoration: none
-		@extend .opaque
 		
 		
 		

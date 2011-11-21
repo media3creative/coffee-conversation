@@ -1,4 +1,4 @@
-.font-helvetica, .subnav h1, .text h1, .form h1, .button h1, .main {
+.font-helvetica, .main {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -14,11 +14,11 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
+.font-trebuchet, .font-base {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
+.bg-gradient-primary, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -52,11 +52,13 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {
@@ -87,7 +89,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 0px;
 }
 
-.corner-top, .subnav h1, .text h1, .form h1, .button h1, .subnav h3, .text h3, .form h3, .button h3 {
+.corner-top, .subnav h3, .text h3, .form h3, .button h3 {
   -moz-border-radius-topleft: 0px;
   -khtml-border-radius-topleft: 0px;
   -webkit-border-top-left-radius: 0px;
@@ -167,7 +169,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 
 .box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .form h1, .button h1, .subnav h3, .text h3, .form h3, .button h3, .link, .link p, .text p, .form p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p, .container-setup, .subnav, .text, .form, .button {
@@ -201,7 +203,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, .subnav h1, .text h1, .form h1, .button h1, .main {
+.font-helvetica, .main {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -217,11 +219,11 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
+.font-trebuchet, .font-base {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .form, .button {
+.bg-gradient-primary, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -255,11 +257,13 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {
@@ -290,7 +294,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 0px;
 }
 
-.corner-top, .subnav h1, .text h1, .form h1, .button h1, .subnav h3, .text h3, .form h3, .button h3 {
+.corner-top, .subnav h3, .text h3, .form h3, .button h3 {
   -moz-border-radius-topleft: 0px;
   -khtml-border-radius-topleft: 0px;
   -webkit-border-top-left-radius: 0px;
@@ -354,8 +358,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .banner .center {
   padding: 30px 0 15px;
-  border-left: 1px solid #911b56;
-  border-right: 1px solid #911b56;
 }
 .banner .center .content {
 @extent .box;
@@ -377,9 +379,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 auto;
 }
 .body .center {
-  padding: 15px 0;
-  border-left: 1px solid #911b56;
-  border-right: 1px solid #911b56;
+  padding: 30px 0;
 }
 .body .center .content {
 @extent .box;
@@ -397,36 +397,36 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .sidebar.left {
   display: inline;
   float: left;
-  margin: 0 30px 30px 0;
+  margin: 15px 30px 30px 0;
 }
 
 .sidebar.right {
   display: inline;
   float: right;
-  margin: 0 0 30px 30px;
+  margin: 15px 0 30px 30px;
 }
 
 .subnav h1, .text h1, .form h1, .button h1, .form h1 {
+  font-family: "EmbedFont-1";
   position: relative;
-  color: white;
+  color: #c3b59b;
   background: transparent;
   width: 220px;
   margin: 0 auto;
   padding: 1em 0;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 100;
   text-align: left;
 }
 .subnav h3, .text h3, .form h3, .button h3, .form h3 {
-  font-family: "EmbedFont-1";
+  font-family: "EmbedFont-2";
   position: relative;
-  color: white;
-  background: transparent;
+  color: #c3b59b;
   width: 220px;
   margin: 0 auto;
   padding: 0;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 100;
   text-transform: none;
   text-align: left;
 }
@@ -477,11 +477,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .text p, .form p {
-  font-family: "EmbedFont-1";
+  font-family: "EmbedFont-2";
   width: 220px;
   margin: 0 auto 15px;
   padding: 0;
-  color: white;
+  color: #c3b59b;
   font-size: 13px;
   font-weight: 200;
   text-align: justify;
@@ -489,6 +489,15 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .text p:last-child, .form p:last-child {
   margin-bottom: 15px;
+}
+.text p a, .form p a {
+  color: #c3b59b;
+  text-decoration: none;
+  border-bottom: 1px dotted #91551d;
+}
+.text p a:hover, .form p a:hover {
+  color: #b71d29;
+  border-bottom: 1px solid transparent;
 }
 
 .button p.link {
@@ -554,33 +563,35 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   z-index: 100;
 }
 .main .content .section h1, .main .content .main h1 {
+  font-family: "EmbedFont-1";
   width: 475px;
   margin: 0px 0 10px 115px;
-  padding: 0 3em 0 0px;
-  color: #8ccaee !important;
-  font-size: 22px;
-  font-weight: bolder;
+  padding: 0 3em 3px 0px;
+  color: #b71d29 !important;
+  font-size: 32px;
+  font-weight: 100;
   word-spacing: 0.1em;
-  letter-spacing: -0.05em;
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid #5d3919;
 }
 .main .content .section h4, .main .content .main h4 {
+  font-family: "EmbedFont-2";
   width: 590px;
   margin: 15px 0 0 0;
   padding: 0 0 0 0px;
-  color: #a71f63;
-  font-size: 13px;
+  color: #5d3919;
+  font-size: 15px;
   font-weight: bold;
-  text-align: justify;
+  text-transform: uppercase;
   line-height: 1.2em;
 }
 .main .content .section p, .main .content .main p {
+  font-family: "EmbedFont-2";
   width: 590px;
   margin: 0px 0 10px 0;
   padding: 0 0 0 0px;
-  color: #666666;
-  font-size: 12px;
-  font-weight: 200;
+  color: #c3b59b;
+  font-size: 14px;
+  font-weight: 100;
   text-align: justify;
   line-height: 1.7em;
 }
@@ -588,11 +599,13 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin-bottom: 0;
 }
 .main .content .section p a, .main .content .main p a {
-  color: #8ccaee;
+  color: #c3b59b;
   text-decoration: none;
+  border-bottom: 1px dotted #91551d;
 }
 .main .content .section p a:hover, .main .content .main p a:hover {
-  color: #5ea6db;
+  color: #b71d29;
+  border-bottom: 1px solid transparent;
 }
 
 .container-setup, .subnav, .text, .form, .button {
@@ -602,7 +615,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   clear: both;
   width: 280px;
   margin: 0 0 30px 0;
-  border: 1px solid #499ad6;
+  background: #2d1d10;
+  border: 1px solid #5d3919;
   z-index: 20;
 }
 

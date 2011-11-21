@@ -92,11 +92,13 @@ table {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 a {
@@ -292,11 +294,13 @@ select, input, textarea {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {
@@ -407,7 +411,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 
 .box, .center-container, .content {
@@ -495,11 +499,13 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {
@@ -1322,11 +1328,13 @@ p:last-child {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .omg-bar {
@@ -1428,13 +1436,13 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 html {
   margin: 0;
   padding: 0;
-  background: url(/images/stripe.png) repeat;
+  background: #291b10;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: url(/images/stripe.png) repeat;
+  background: transparent;
 }
 
 .content {

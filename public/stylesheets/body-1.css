@@ -1,4 +1,4 @@
-.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right .container h1 {
+.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -52,11 +52,13 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {
@@ -131,7 +133,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right .container p.link {
+.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -167,7 +169,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 
 .box, .center-container, .body .center, .body, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right .container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right .container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right .container p.link, form.mailchimp {
@@ -177,7 +179,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   box-sizing: border-box;
 }
 
-.opaque, .container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right .container:hover {
+.opaque {
   opacity: 0.92 !important;
   filter: alpha(opacity=92) !important;
 }
@@ -201,7 +203,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right .container h1 {
+.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -255,11 +257,13 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {
@@ -334,7 +338,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right .container p.link {
+.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -354,8 +358,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .body .center {
   padding: 15px 0;
-  border-left: 1px solid #911b56;
-  border-right: 1px solid #911b56;
 }
 .body .center .content {
 @extent .box;
@@ -365,15 +367,12 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .body .center .content .left a.container {
   margin: 0px 29px 0 0;
-  background: url(/images/home_left.jpg) no-repeat;
 }
 .body .center .content .middle a.container {
   margin: 0px 29px 0 0;
-  background: url(/images/home_center.jpg) no-repeat;
 }
 .body .center .content .right .container {
   margin: 0;
-  background: url(/images/home_rightMC.jpg) no-repeat;
 }
 
 .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right .container {
@@ -382,47 +381,41 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   float: left;
   width: 280px;
   height: 200px;
-  border: 1px solid #499ad6;
+  background: #2d1d10;
+  border: 1px solid #5d3919;
   z-index: 20;
 }
 .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right .container h1 {
+  font-family: "EmbedFont-1";
   position: absolute;
   top: 22.5px;
   left: 22.5px;
   margin: 0 22.5px 0 0;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #5ea6db;
+  color: #c3b59b;
+  font-size: 22px;
+  font-weight: 100;
   word-spacing: 0.1em;
-  letter-spacing: -0.05em;
 }
 .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right .container h3 {
-  font-family: "EmbedFont-1";
+  font-family: "EmbedFont-2";
   position: absolute;
   top: 75px;
   left: 22.5px;
-  margin: 0 110px 12px 0;
-  color: white;
-  font-size: 12px;
+  margin: 0 95px 12px 0;
+  color: #c3b59b;
+  font-size: 14px;
   font-weight: 200;
   line-height: 1.3em;
 }
-.container-setup h3.mailchimp, .body .center .content .left a.container h3.mailchimp, .body .center .content .middle a.container h3.mailchimp, .body .center .content .right .container h3.mailchimp {
-  margin: 0 15px 12px 0;
-}
 .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right .container p.link {
-  font-family: "EmbedFont-1";
+  font-family: "EmbedFont-2";
   position: absolute;
   bottom: 15px;
   left: 22.5px;
   display: inline;
-  color: #a71f63;
-  font-size: 11px;
-  font-weight: 200;
-  text-decoration: none;
-}
-.container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right .container:hover {
+  color: #b71d29;
+  font-size: 12px;
+  font-weight: 100;
   text-decoration: none;
 }
 

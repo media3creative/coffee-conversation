@@ -18,8 +18,6 @@
 	.center
 		@extend .center-container
 		padding: $v-gap 0 ($v-gap/2)
-		border-left: 1px solid $secondary-dark
-		border-right: 1px solid $secondary-dark
 		.content
 			@extent .box
 			width: $inside-width
@@ -45,9 +43,7 @@
 	.center
 		@extend .center-container
 		@extend .clearfix
-		padding: ($v-gap/2) 0
-		border-left: 1px solid $secondary-dark
-		border-right: 1px solid $secondary-dark
+		padding: ($v-gap) 0
 		.content
 			@extent .box
 			width: $inside-width
@@ -64,11 +60,11 @@
 	
 .sidebar.left
 	+float-left
-	margin: 0 $h-gap $v-gap 0
+	margin: 15px $h-gap $v-gap 0
 
 .sidebar.right
 	+float-right
-	margin: 0 0 $v-gap $h-gap
+	margin: 15px 0 $v-gap $h-gap
 	
 
 // Subnavigation-style sidebar box
@@ -76,29 +72,27 @@
 	@extend .container-setup
 	h1
 		@extend .box
-		@extend .corner-top
-		@extend .font-helvetica
+		font-family: "EmbedFont-1"
 		position: relative
-		color: $option-title
+		color: $tan
 		background: $option-title-bg
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto
 		padding: 1em 0
 		font-size: 18px
-		font-weight: bold
+		font-weight: 100
 		text-align: left
 	h3
 		@extend .box
 		@extend .corner-top
-		font-family: "EmbedFont-1"
+		font-family: "EmbedFont-2"
 		position: relative
-		color: $option-title
-		background: $option-title-bg
+		color: $tan
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto
 		padding: 0
 		font-size: 13px
-		font-weight: bold
+		font-weight: 100
 		text-transform: none
 		text-align: left
 
@@ -146,18 +140,26 @@
 // Text-style sidebar box
 .text
 	p
-		font-family: "EmbedFont-1"
+		font-family: "EmbedFont-2"
 		@extend .box
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto ($v-gap / 2)
 		padding: 0
-		color: $option-text
+		color: $tan
 		font-size: 13px
 		font-weight: 200
 		text-align: justify
 		line-height: 1.7em
 		&:last-child
 			margin-bottom: ($v-gap / 2)
+		a
+			color: $tan
+			text-decoration: none
+			border-bottom: 1px dotted #91551d
+			&:hover
+				color: $red
+				border-bottom: 1px solid transparent
+
 
 // Button-style sidebar box
 .button
@@ -213,7 +215,6 @@
 			@extend .clearfix
 			position: relative
 			padding: 0 0 ($v-gap) 0
-			//border-bottom: 1px dotted $section-border
 			&:last-child
 				padding-bottom: 0
 				border-bottom: none
@@ -228,59 +229,59 @@
 				margin: 0 ($h-gap / 2) 5px 0
 				z-index: 100
 			h1
-				@extend .font-Helvetica
+				font-family: "EmbedFont-1"
 				@extend .box
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
 				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
-				padding: 0 3em 0 $corner-radius
-				color: $section-title !important
-				font-size: 22px
-				font-weight: bolder
+				padding: 0 3em 3px $corner-radius
+				color: $red !important
+				font-size: 32px
+				font-weight: 100
 				word-spacing: .1em
-				letter-spacing: -0.05em
-				border-bottom: 1px solid $section-lines
+				border-bottom: 1px solid $brown-lt
 			h4
-				@extend .font-base
+				font-family: "EmbedFont-2"
 				@extend .box
 				width: ($content-width)
 				margin: ($v-gap/2) 0 0 0
 				padding: 0 0 0 $corner-radius
-				color: $secondary
-				font-size: 13px
+				color: $brown-lt
+				font-size: 15px
 				font-weight: bold
-				text-align: justify
+				text-transform: uppercase
 				line-height: 1.2em
 			p
-				@extend .font-base
+				font-family: "EmbedFont-2"
 				@extend .box
 				width: ($content-width)
 				margin: $corner-radius 0 ($v-gap/3) 0
 				padding: 0 0 0 $corner-radius
-				color: $section-text
-				font-size: 12px
-				font-weight: 200
+				color: $tan
+				font-size: 14px
+				font-weight: 100
 				text-align: justify
 				line-height: 1.7em
 				&:last-child
 					margin-bottom: 0
 				a
-					color: $primary-light
+					color: $tan
 					text-decoration: none
+					border-bottom: 1px dotted #91551d
 					&:hover
-						color: $primary
+						color: $red
+						border-bottom: 1px solid transparent
 
 .container-setup
 	@extend .box
 	@extend .corner-all
 	@extend .clearfix
-	@extend .bg-gradient-primary
 	position: relative
 	+float-left
 	clear: both
 	width: $sidebar-width
 	margin: 0 0 $v-gap 0
-	//background: $option-bg
-	border: 1px solid $option-border
+	background: $brown-md
+	border: 1px solid $brown-lt
 	z-index: 20
 
 .columns

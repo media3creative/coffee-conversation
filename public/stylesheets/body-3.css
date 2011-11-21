@@ -52,11 +52,13 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {
@@ -167,7 +169,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 
 .box, .center-container, .banner .center, .listings .center, .banner, .banner .center .content img.banner, .listings, .listing-setup, .listings .center .content .left a.container, .listings .center .content .middle a.container, .listings .center .content .right a.container, .listing-setup h1, .listings .center .content .left a.container h1, .listings .center .content .middle a.container h1, .listings .center .content .right a.container h1, .listing-setup h3, .listings .center .content .left a.container h3, .listings .center .content .middle a.container h3, .listings .center .content .right a.container h3, .listing-setup p.link, .listings .center .content .left a.container p.link, .listings .center .content .middle a.container p.link, .listings .center .content .right a.container p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
@@ -255,11 +257,13 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {

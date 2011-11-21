@@ -18,7 +18,7 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, #header, #header .center {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -52,11 +52,13 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {
@@ -144,16 +146,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 0px;
 }
 
-.clearfix {
+.clearfix, ul#topnav {
   zoom: 1;
 }
-.clearfix:before {
+.clearfix:before, ul#topnav:before {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.clearfix:after {
+.clearfix:after, ul#topnav:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -161,16 +163,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   clear: both;
 }
 
-.center-container, #header .center {
+.center-container, #header .center, #navigation .center {
   position: relative;
   width: 960px;
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 
-.box, .center-container, #header .center, #header, #header .center #logo1, ul#topnav a.topnav, ul#topnav .sub ul li a {
+.box, .center-container, #header .center, #navigation .center, #header, #header .center #logo1, #navigation, ul#topnav, ul#topnav a.topnav, ul#topnav .sub ul li a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -221,7 +223,7 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, #header, #header .center {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -255,11 +257,13 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  color: #c3b59b;
+  background: #4d321e;
 }
 
 .corner-top-left {
@@ -349,16 +353,20 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 #header {
   width: 100%;
-  height: 80px;
+  height: 320px;
   margin: 0;
   padding: 0;
-  border-bottom: 2px solid #499ad6;
+  border-top: 4px solid #b71d29;
+  background: url(/images/bg-wood.jpg) repeat;
+}
+#header .center {
+  background: url(/images/bg-words.png) center center no-repeat;
 }
 #header .center #logo1 {
-  position: absolute;
-  top: 15px;
-  left: 35px;
-  margin: 0;
+  position: relative;
+  width: 272px;
+  height: 320px;
+  margin: 0 auto;
 }
 #header .center #logo1 a {
   display: block;
@@ -366,21 +374,33 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 0;
 }
 #header .center #logo1 a img {
-  width: 200px;
-  height: 50px;
-  margin: 0;
+  width: 267px;
+  height: 320px;
+  margin: 0 0 0 5px;
   padding: 0;
   border: 0;
   background: transparent;
 }
 
+#navigation {
+  width: 100%;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  border-top: 4px solid #b71d29;
+  border-bottom: 2px solid #5d3919;
+  background: #2d1d10;
+}
+#navigation .center {
+  background: transparent;
+}
+
 ul#topnav {
   font-family: "EmbedFont-1";
-  display: inline;
-  float: right;
-  margin: 20px 1px 0 235px;
+  width: 530px;
+  margin: 0 auto;
   padding: 0;
-  color: #499ad6;
+  color: #c3b59b;
   font-size: 11px;
   letter-spacing: 0.05em;
   list-style: none;
@@ -391,8 +411,12 @@ ul#topnav li {
   position: relative;
   display: inline;
   float: left;
-  margin: 0;
+  margin: 12px 0 0 0;
   padding: 0;
+  border-right: 1px solid #5d3919;
+}
+ul#topnav li:last-child {
+  border-right: 0px;
 }
 
 ul#topnav li a {
@@ -402,18 +426,15 @@ ul#topnav li a {
 }
 
 ul#topnav a.topnav {
-  margin: 6px -1px 0 0;
-  padding: 0.5em 1.8em 0.4em 1.8em;
-  font-size: 13px;
+  margin: 0 0px 0 0;
+  padding: 0.1em 1.8em 0.2em 1.8em;
+  font-size: 18px;
   text-align: center;
-  text-transform: uppercase;
-  border-left: 1px solid #5ea6db;
-  border-right: 1px solid #5ea6db;
 }
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover {
   color: white;
-  background: #5ea6db;
+  background: #291b10;
 }
 
 ul#topnav li .sub {
@@ -424,7 +445,7 @@ ul#topnav li .sub {
   top: 2.7em;
   left: 0px;
   background: #499ad6;
-  padding: 5px 0 6px 0;
+  padding: 4px 0 6px 0;
   z-index: 50;
 }
 
@@ -478,6 +499,7 @@ ul#topnav .sub ul li h2 {
   font-weight: bolder;
 }
 
-.navigation-hover, body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six {
+body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six {
   color: white;
+  background: #291b10;
 }
